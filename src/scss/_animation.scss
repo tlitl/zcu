@@ -1,0 +1,23 @@
+.zcu-hover-1 {
+    transition: 256ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.zcu-hover-2 {
+    transition: 256ms ease-in-out;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+.zcu-hover-3 {
+    transition: transform .65s cubic-bezier(.23, 1, .32, 1);
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}

@@ -50,11 +50,10 @@ if (navigator.userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") 
 //     { "name": "计算机应用技术", "url": "#111" },
 //     { "name": "计算机科学", "url": "#222" },
 // ];
-// if (null != document.querySelector(".zcu-search-list")) {
-// const zcuSearch = document.querySelector(".zcu-search-list");
-// }
-// function updateZcuSearch(e) {
 
+// const zcuSearch = document.querySelector(".zcu-search-list");
+
+// function updateZcuSearch(e) {
 //     let zcuKey = e.target.value;
 //     let zcuSearchResult = '';
 //     for (const major of majors) {
@@ -62,9 +61,10 @@ if (navigator.userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") 
 //             zcuSearchResult += "<li><a href='" + major.url + "' target='_blank' title='" + major.name + "'>" + major.name + "</a></li>";
 //         }
 //     };
-//     zcuSearch.innerHTML = zcuSearchResult; 
-//     zcuSearch.classList.add("show");
-    
+//     if (zcuSearchResult) {
+//         zcuSearch.innerHTML = zcuSearchResult;
+//         zcuSearch.classList.add("show");
+//     }
 // }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -560,12 +560,74 @@ document.addEventListener("DOMContentLoaded", () => {
     // };
 
     // if (null != document.querySelector("#zcuKeyword")) {
-    //     const zcuKeyword = document.querySelector("#zcuKeyword"); 
+    //     const zcuKeyword = document.querySelector("#zcuKeyword");
     //     zcuKeyword.addEventListener("input", updateZcuSearch);
     //     zcuKeyword.addEventListener("blur", () => {
-    //         // zcuSearch.classList.remove("show"); 
+    //         zcuSearch.classList.remove("show");
+    //         // zcuSearch.innerHTML = '';
     //     });
     // };
+    if (null != document.querySelector('.search-wrapper')) {
+        // 专业搜索 参考https://www.nottingham.edu.cn/cn/index.aspx
+        // 待优化专业名称模糊搜索 https://github.com/krisk/fuse
+        // 数据源https://www.zcu.edu.cn/s?ac=w传值keyword
+        const zcuSearch = document.querySelector('.search-wrapper');
+        const searchKey = document.querySelector('.search-input');
+        const searchBtn = document.querySelector('.search-btn');
+        const searchClear = document.querySelector('.search-clear');
+        let searchKW = '';
+        const searchToggle = () => {
+            searchKW === '' ? searchClear.classList.remove('show') : searchClear.classList.add('show');
+            searchKW.trim() === '' ? searchBtn.classList.add('disabled') : searchBtn.classList.remove('disabled');
+        };
+
+        searchKey.onfocus = () => {
+            zcuSearch.classList.add('active');
+        };
+
+        document.addEventListener('click', (e) => {
+            if (!zcuSearch.contains(e.target) && searchKW.trim() === '') {
+                zcuSearch.classList.remove('active');
+            }
+        });
+
+        const resetSearch = () => {
+            searchKW = '';
+            searchKey.value = '';
+            searchToggle();
+        };
+
+        searchClear.onclick = () => {
+            resetSearch()
+        };
+
+        searchKey.oninput = (e) => {
+            searchKW = e.target.value;
+            searchToggle()
+        };
+
+        const zSearch = (e) => {
+            window.open(
+                `https://www.zcu.edu.cn/s?sids=1&kp=1&wd=${e}`,
+                '_self',
+            ),
+                resetSearch()
+        };
+
+        searchKey.onkeyup = (e) => {
+            if (e.key === 'Enter') {
+                if (searchKW === '') {
+                    return;
+                } else {
+                    zSearch(searchKW)
+                }
+            }
+        };
+
+        searchBtn.onclick = () => {
+            zSearch(searchKW)
+        };        
+    }
 
     // const triggerTabList = document.querySelectorAll('#zcuCourse .nav-link');
     // triggerTabList.forEach(triggerEl => {
