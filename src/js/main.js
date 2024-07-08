@@ -29,16 +29,6 @@ import tocbot from 'tocbot';
 
 // import our bootstrp CSS
 import '../scss/styles.scss';
-// import 'bootstrap-icons/font/bootstrap-icons.min.css';
-
-// import our custom CSS
-// import '../css/zcu.css';
-
-// Share
-// document.querySelectorAll('[data-bs-toggle="popover"]')
-//     .forEach(popover => {
-//         new Popover(popover)
-//     })
 
 // detect older browsers (from weixin.qq.com)
 if (navigator.userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1) {
@@ -46,26 +36,50 @@ if (navigator.userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") 
     upgradeModal.show();
 }
 
-// const majors = [
-//     { "name": "计算机应用技术", "url": "#111" },
-//     { "name": "计算机科学", "url": "#222" },
-// ];
-
-// const zcuSearch = document.querySelector(".zcu-search-list");
-
-// function updateZcuSearch(e) {
-//     let zcuKey = e.target.value;
-//     let zcuSearchResult = '';
-//     for (const major of majors) {
-//         if (major.name.indexOf(zcuKey) !== -1) {
-//             zcuSearchResult += "<li><a href='" + major.url + "' target='_blank' title='" + major.name + "'>" + major.name + "</a></li>";
-//         }
-//     };
-//     if (zcuSearchResult) {
-//         zcuSearch.innerHTML = zcuSearchResult;
-//         zcuSearch.classList.add("show");
-//     }
-// }
+const majors = [
+    { "name": "高速铁路客运服务专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/whjyxy1/content_5922" },
+    { "name": "建筑装饰工程技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/jzgcxy1/content_5923" },
+    { "name": "计算机应用技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/dzxxgcxy1/content_5924" },
+    { "name": "电子商务专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/sxy1/content_7814" },
+    { "name": "新能源汽车技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/znzzxy1/content_10140" },
+    { "name": "数字媒体技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/dzxxgcxy1/content_10141" },
+    { "name": "大数据与会计专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/sxy1/content_10142" },
+    { "name": "大数据技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/dzxxgcxy1/content_10143" },
+    { "name": "建筑工程技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/jzgcxy1/content_10144" },
+    { "name": "艺术设计专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/jzgcxy1/content_10145" },
+    { "name": "机电一体化技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/znzzxy1/content_10146" },
+    { "name": "影视多媒体技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/dzxxgcxy1/content_10147" },
+    { "name": "电子商务专业（新媒体营销）", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/dzxxgcxy1/content_10148" },
+    { "name": "环境艺术设计专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/jzgcxy1/content_10149" },
+    { "name": "早期教育专业（师范）", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/whjyxy1/content_10150" },
+    { "name": "机械设计与制造专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/znzzxy1/content_10160" },
+    { "name": "学前教育专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/whjyxy1/content_10161" },
+    { "name": "旅游管理专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/sxy1/content_10162" },
+    { "name": "现代物流管理专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/sxy1/content_10169" },
+    { "name": "非金属矿物材料技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/clgcxy1/content_10170" },
+    { "name": "电气自动化技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/dzxxgcxy1/content_10176" },
+    { "name": "汽车制造与试验技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/znzzxy1/content_10289" },
+    { "name": "工商企业管理专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/sxy1/content_10290" },
+    { "name": "空中乘务专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/whjyxy1/content_10291" },
+    { "name": "金融服务与管理专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/sxy1/content_10293" },
+    { "name": "道路与桥梁工程技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/jzgcxy1/content_10294" },
+    { "name": "电子竞技运动与管理专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/dzxxgcxy1/content_10295" },
+    { "name": "酒店管理与数字化运营专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/sxy1/content_10296" },
+    { "name": "工业机器人技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/dzxxgcxy1/content_10297" },
+    { "name": "机械制造及自动化专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/znzzxy1/content_10298" },
+    { "name": "工程造价专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/jzgcxy1/content_10299" },
+    { "name": "应用英语专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/whjyxy1/content_10300" },
+    { "name": "软件技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/dzxxgcxy1/content_10301" },
+    { "name": "数字媒体技术专业（三维动画设计）", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/dzxxgcxy1/content_10302" },
+    { "name": "新型建筑材料技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/jzgcxy1/content_10303" },
+    { "name": "人工智能技术应用专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/dzxxgcxy1/content_10304" },
+    { "name": "视觉传达设计专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/jzgcxy1/content_10305" },
+    { "name": "材料工程技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/clgcxy1/content_10306" },
+    { "name": "市场营销专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/sxy1/content_10309" },
+    { "name": "动漫制作技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/dzxxgcxy1/content_10310" },
+    { "name": "汽车检测与维修技术专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/znzzxy1/content_10311" },
+    { "name": "音乐表演专业", "url": "https://www.zcu.edu.cn/zsjy/zhuanye/whjyxy1/content_10312" }
+];
 
 document.addEventListener("DOMContentLoaded", () => {
     // dropdown Menu
@@ -122,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // swiper
-    const swiper = new Swiper('.zcu-swiper-student', {
+    const swiperStudent = new Swiper('.zcu-swiper-student', {
 
         // autoHeight: true,
 
@@ -131,25 +145,18 @@ document.addEventListener("DOMContentLoaded", () => {
             pauseOnMouseEnter: true,
         },
         effect: 'fade',
-        // createElements: true,
         // direction: 'vertical',
         loop: true,
+        createElements: true,
         // Navigation arrows
-        // navigation: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+        navigation: true,
         // If we need pagination
-        // pagination: true,
         pagination: {
-            el: '.swiper-pagination',
+            enabled: true,
             clickable: true,
         },
         // And if we need scrollbar
-        // scrollbar: {
-        //     el: '.swiper-scrollbar',
-        // },
+        // scrollbar: true,
         slidesPerView: 1,
         spaceBetween: 10,
 
@@ -165,26 +172,18 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
         effect: 'fade',
-
-        // createElements: true,
         // direction: 'vertical',
         loop: true,
+        createElements: true,
         // Navigation arrows
-        // navigation: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+        navigation: true,
         // If we need pagination
-        // pagination: true,
         pagination: {
-            el: '.swiper-pagination',
+            enabled: true,
             clickable: true,
         },
         // And if we need scrollbar
-        // scrollbar: {
-        //     el: '.swiper-scrollbar',
-        // },
+        // scrollbar: true,
         slidesPerView: 1,
         spaceBetween: 10,
 
@@ -200,17 +199,16 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
         loop: true,
+        createElements: true,
         // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+        navigation: true,
         // If we need pagination
-        // pagination: true,
         pagination: {
-            el: '.swiper-pagination',
+            enabled: true,
             clickable: true,
         },
+        // And if we need scrollbar
+        // scrollbar: true,
         slidesPerView: 1,
         spaceBetween: 10,
 
@@ -255,25 +253,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 spaceBetween: 0,
             }
         },
-        // createElements: true,
         // direction: 'vertical',
         loop: true,
+        createElements: true,
         // Navigation arrows
-        // navigation: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+        navigation: true,
         // If we need pagination
-        // pagination: true,
         pagination: {
-            el: '.swiper-pagination',
+            enabled: true,
             clickable: true,
         },
         // And if we need scrollbar
-        // scrollbar: {
-        //     el: '.swiper-scrollbar',
-        // },
+        // scrollbar: true,
         slidesPerView: 2,
         spaceBetween: 10,
 
@@ -314,27 +305,74 @@ document.addEventListener("DOMContentLoaded", () => {
                 spaceBetween: 30,
             },
         },
-        // createElements: true,
         // direction: 'vertical',
         loop: true,
+        createElements: true,
         // Navigation arrows
-        // navigation: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+        navigation: true,
         // If we need pagination
-        // pagination: true,
         pagination: {
-            el: '.swiper-pagination',
+            enabled: true,
             clickable: true,
         },
         // And if we need scrollbar
-        // scrollbar: {
-        //     el: '.swiper-scrollbar',
-        // },
+        // scrollbar: true,
         slidesPerView: 1,
         spaceBetween: 10,
+
+    });
+
+    const swiperLogo = new Swiper('.zcu-swiper-logo', {
+
+        // autoHeight: true,
+
+        autoplay: {
+            delay: 5000,
+            pauseOnMouseEnter: true,
+        },
+
+        slidesPerView: 12,
+        grid: {
+            rows: 2,
+        },
+
+
+        spaceBetween: 20,
+
+        // breakpoints: {
+        //     640: {
+        //         slidesPerView: 2,
+        //         spaceBetween: 0,
+        //     },
+        //     768: {
+        //         slidesPerView: 3,
+        //         spaceBetween: 0,
+        //     },
+        //     1024: {
+        //         slidesPerView: 4,
+        //         spaceBetween: 0,
+        //     },
+        //     1400: {
+        //         slidesPerView: 4,
+        //         spaceBetween: 0,
+        //     }
+        // },
+        // createElements: true,
+        // direction: 'vertical',
+        loop: true,
+        grabCursor: true,
+        createElements: true,
+        // Navigation arrows
+        navigation: true,
+        // If we need pagination
+        pagination: {
+            enabled: true,
+            clickable: true,
+        },
+        // And if we need scrollbar
+        // scrollbar: true,
+        // slidesPerView: 2,
+        // spaceBetween: 10,
 
     });
 
@@ -575,10 +613,26 @@ document.addEventListener("DOMContentLoaded", () => {
         const searchKey = document.querySelector('.search-input');
         const searchBtn = document.querySelector('.search-btn');
         const searchClear = document.querySelector('.search-clear');
+        const searchResult = document.querySelector('.search-result');
         let searchKW = '';
+        const searchResultToggle = () => {
+            let zcuSearchResult = searchResult.innerHTML = '';
+            for (const major of majors) {
+                if (major.name.indexOf(searchKW) !== -1) {
+                    zcuSearchResult += "<li><a href='" + major.url + "' target='_blank' title='" + major.name + "'>" + major.name + "</a></li>";
+                }
+            };
+            if (zcuSearchResult) {
+                searchResult.innerHTML = zcuSearchResult;
+            } else {
+                searchResult.innerHTML = "<li>未找到您要搜索的专业</li><li><a href='https://ao.zcu.edu.cn/lxwm' target='_blank'>联系招生老师</a></li>"; 
+            }
+            searchResult.classList.add('show');
+        };
         const searchToggle = () => {
             searchKW === '' ? searchClear.classList.remove('show') : searchClear.classList.add('show');
             searchKW.trim() === '' ? searchBtn.classList.add('disabled') : searchBtn.classList.remove('disabled');
+            searchKW.trim() === '' ? searchResult.classList.remove('show') : searchResultToggle();
         };
 
         searchKey.onfocus = () => {
