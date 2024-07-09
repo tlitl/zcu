@@ -367,6 +367,16 @@
         margin-top: -1rem;
         display: none;
         list-style: none;
+        max-height: 17rem;
+        overflow-y: auto;
+        // &::-webkit-scrollbar {
+        //     display: none;
+        //     /* Chrome Safari */
+        // }
+        // scrollbar-width: none;
+        // /* firefox */
+        // -ms-overflow-style: none;
+        // /* IE 10+ */
         &.show {
             display: block;
             background: #ffffff;
@@ -374,7 +384,7 @@
             padding-top: 1rem;
             padding-bottom: 1rem;
             li {
-                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
                 
             }
             a {
