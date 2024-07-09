@@ -1,7 +1,7 @@
 node_modules
-js/modules
-js/color-mode.js
-js/theme.js
+src/js/modules/
+src/js/color-mode.js
+src/js/theme.js
 .DS_Store
 .env
 *.md
