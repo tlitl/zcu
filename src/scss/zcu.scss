@@ -15,7 +15,7 @@
     --zcu-text-secondary-color: #505a5f;
     --zcu-focus-color: #bd9f68;
     --zcu-focus-color-rgb: 189, 159, 104;
-    --zcuBaseTransition: all 0.3s linear 0s;
+    --zcuBaseTransition: all 0.5s linear 0s;
 }
 
 .zcu-text-shadow {
@@ -580,6 +580,10 @@
             }
         }
     }
+}
+
+.pagination.pagination-3d .page-item .page-link {
+    border-bottom: 3px solid rgba(var(--zcu-black-rgb), .15) !important
 }
 
 .zcu-features {

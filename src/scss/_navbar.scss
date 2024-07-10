@@ -174,9 +174,10 @@
                         font-size: 1rem;
                         opacity: 0;
                         transform: translate(-50%, 10px);
-                        transition: all .3s ease-in-out;
+                        // transition: all .3s ease-in-out;
                         visibility: hidden;
                         min-width: 10vw;
+                        transition: var(--zcuBaseTransition);
 
                         li {
                             border-bottom: 0;

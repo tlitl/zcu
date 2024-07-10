@@ -69,9 +69,10 @@
         border-bottom: 1px solid #eee;
         padding: 0.5rem 0;
         transition: var(--zcuBaseTransition);
-        &:hover {
+        &:not(.is-active-link):hover {
             color: var(--zcu-focus-color);
             border-color: rgba(var(--zcu-focus-color-rgb), .25);
+            transform: translateX(10px) !important;
         }
 
         &:hover::before {
