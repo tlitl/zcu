@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,1037 +10,203 @@
     <meta name="keywords" content="1123">
     <meta name="description" content="456">
 </head>
-<body>
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-        <symbol id="row-fill" viewBox="0 0 16 16">
-            <path
-                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z">
-            </path>
-        </symbol>
 
-    </svg>
+<body>
 
     <header class="navbar navbar-expand-lg zcu-navbar sticky-top">
         <nav class="container-xxl flex-wrap flex-lg-nowrap">
-                <a class="navbar-brand p-0 me-auto me-lg-2" href="#"><img src="./images/logo.png" alt /></a>
+            <a class="navbar-brand p-0 me-auto me-lg-2" href="#"><img src="/content/_common/v3/images/logo.png" alt /></a>
 
-                <div class="zcu-navbar-toggle d-lg-none">
-                    <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
-                        aria-controls="bdSidebar" aria-label="Toggle docs navigation">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z">
-                                </path>
-                            </svg>
-                        <span class="d-none fs-6 pe-1">全部专业</span>
-                    </button>
+            <div class="zcu-navbar-toggle d-lg-none">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
+                    aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z">
+                        </path>
+                    </svg>
+                    <span class="d-none fs-6 pe-1">全部专业</span>
+                </button>
+            </div>
+
+            <div class="d-flex">
+                <button class="navbar-toggler offcanvas-nav-btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-end flex-grow-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+                <div class="offcanvas-header">
+                    <a href="#" class="navbar-brand text-inverse p-0"><img src="/content/_common/v3/images/logo-w.png" alt /></a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+                <div class="offcanvas-body pt-0 align-items-center">
+                    <ul class="navbar-nav ms-lg-auto me-lg-0 align-items-lg-center navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" role="button">首页</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">学校概况</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">学校简介</a></li>
+                                <li><a class="dropdown-item" href="#">学校简介</a></li>
+                                <li><a class="dropdown-item" href="#">学校简介</a></li>
 
-                <div class="d-flex">
-                    <button class="navbar-toggler offcanvas-nav-btn" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
-                            </path>
-                        </svg>
-                    </button>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">学校概况</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">学校简介</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">学校概况</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">学校简介</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">学校概况</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">学校简介</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">学校概况</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">学校简介</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">学校概况</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">学校简介</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">学校概况</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">学校简介</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">学校概况</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">学校简介</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">学校概况</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">电子信息工程学院</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <div class="offcanvas offcanvas-end flex-grow-1" id="bdNavbar"
-                aria-labelledby="bdNavbarOffcanvasLabel">
-                    <div class="offcanvas-header">
-                        <a href="#" class="navbar-brand text-inverse p-0"><img src="./images/logo.png" alt /></a>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body pt-0 align-items-center">
-                        <ul class="navbar-nav ms-lg-auto me-lg-0 align-items-lg-center navbar-nav-scroll">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" role="button">首页</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">学校概况</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">学校简介</a></li>
-                                    <li><a class="dropdown-item" href="#">学校简介</a></li>
-                                    <li><a class="dropdown-item" href="#">学校简介</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">学校概况</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">学校简介</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">学校概况</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">学校简介</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">学校概况</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">学校简介</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">学校概况</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">学校简介</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">学校概况</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">学校简介</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">学校概况</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">学校简介</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">学校概况</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">学校简介</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">学校概况</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">电子信息工程学院</a></li>
-
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            </div>
         </nav>
     </header>
 
     <div class="zcu-page-banner position-relative">
-        <img src="images/parallax-bg.jpg" alt="" class="position-absolute w-100 h-100 object-fit-cover z-1">
+        <img src="/content/_common/v3/images/parallax-bg-lib.jpg" alt="" class="position-absolute w-100 h-100 object-fit-cover z-1">
         <span class="zcu-gradient-bg position-absolute top-0 start-0 w-100 h-100 opacity-50 z-2"></span>
-        <div class="container-xxl d-flex flex-column-reverse position-relative z-3">
+        <div class="container-xxl d-flex flex-column flex-md-column-reverse position-relative z-3">
             <div class="row align-items-end">
+                <div class="col-12">
+                    <nav>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">首页</a></li>
+                            <li class="breadcrumb-item"><a href="/zsjy" title="招生就业">招生就业</a></li>
+                            <li class="breadcrumb-item"><a href="/zsjy/zhuanye" title="招生专业">招生专业</a></li>
+                        </ol>
+                    </nav>
+                </div>
                 <div class="col-12 col-md-8 col-xl-9">
-                    <h1 class="zcu-title text-white mt-3 mb-3">计算机应用技术</h1>
+                    <h1 class="zcu-title text-white mt-4 mb-3">招生专业</h1>
                     <p class="zcu-lead text-white">
-                        省级新型示范点专业，信创名师工作室定向培养。
+                        让每一位学生获得职业成就和人生幸福！
                     </p>
-                    
+
                 </div>
                 <div class="col-12 col-md-4 col-xl-3">
-                    <div class="d-none d-md-block">
-                        <div class="zcu-social-share text-white text-end mb-3">分享到：</div>
-                        <!-- <div class="position-relative flex-fill d-none d-lg-block mb-3">
-                            <i class="bi-search position-absolute top-50 translate-middle-y d-flex  ms-3"></i>
-                            <input class="form-control w-100 form-icon-start ps-5" id="zcuKeyword" placeholder="搜索专业">
+                    <div class="zcu-search">
+                        <div class="search-wrapper">
+                            <div class="search-input-container">
+                                <img class="search-logo" src="/content/_common/v3/images/icon/icon-input.svg" alt="搜索图标">
+                                <input id="zcuKeyword" class="search-input" placeholder="搜索">
+                                <img class="search-clear" src="/content/_common/v3/images/icon/icon-clear.svg" alt="搜索清除图标">
+                            </div>
+                            <div class="search-btn disabled">查找专业</div>
                         </div>
-                        <ul class="dropdown-menu zcu-search-list"> </ul> -->
+                        <ul class="search-result"></ul>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-xxl zcu-gutter mt-3 my-md-4 zcu-layout">
-
-        <aside class="zcu-toc">
-            <div class="offcanvas-lg offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" id="zcuCategory"
-                aria-labelledby="zcuCategoryOffcanvasLabel">
-                <div class="offcanvas-header border-bottom">
-                    <h2 class="offcanvas-title" id="zcuCategoryOffcanvasLabel">计算机应用技术</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
-                        data-bs-target="#zcuCategory"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <nav class="zcu-category">
-
-                    </nav>
-                </div>
-            </div>
-        </aside>
-        <main class="zcu-main order-1">
-            <div class="zcu-content">
-                <h2 id="card" class="invisible">专业名片</h2>
-            
-                <div class="row zcu-features">
-                    <div class="col-12">
-                        <div class="card border-0">
-                            <div class="card-body">
-                                <div class="row g-0 mb-2">
-                                    <div class="col-6 col-sm-4 col-lg-3 d-flex align-items-center mb-2">
-                                        <div class="icon">
-                                            <img src="images/icon/c01.svg" alt="">
-                                        </div>
-                                        <div class="text ms-2">
-                                            <p>名称</p>
-                                            <h6>计算机应用技术</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-2">
-                                        <div class="icon">
-                                            <img src="images/icon/c02.svg" alt="">
-                                        </div>
-                                        <div class="text ms-2">
-                                            <p>学制</p>
-                                            <h6>三年</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center mb-2">
-                                        <div class="icon">
-                                            <img src="images/icon/c03.svg" alt="">
-                                        </div>
-                                        <div class="text ms-2">
-                                            <p>招生类型</p>
-                                            <h6>文科/理科</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-4 col-md-4 d-flex align-items-center mb-2">
-                                        <div class="icon">
-                                            <img src="images/icon/c04.svg" alt="">
-                                        </div>
-                                        <div class="text ms-2">
-                                            <p>院系</p>
-                                            <h6>电子信息工程学院</h6>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="col-12 col-sm-4 d-flex align-items-center mb-2">
-                                        <div class="icon">
-                                            <img src="images/icon/05.svg" alt="" srcset="">
-                                        </div>
-                                        <div class="text ms-2">
-                                            <p>订单班</p>
-                                            <h6>&nbsp;</h6>
-                                        </div>
-                                    </div> -->
-                                    <div class="col-12 d-flex align-items-center mb-2">
-                                        <div class="icon">
-                                            <img src="images/icon/c06.svg" alt="">
-                                        </div>
-                                        <div class="text ms-2">
-                                            <p>特色</p>
-                                            <h6>
-                                                省级新型示范点专业，信创名师工作室定向培养。
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="card-footer d-flex justify-content-between align-items-center bg-white py-3">
-                                <div>
-                                    如何选择适合自己的专业？
-                                </div>
-                                <a href="#" class="btn btn-primary m-0">
-                                    职业测评
-                                    <i class="bi-arrow-bar-right"></i>
-                                </a>
-                            </div> -->
-                        </div>
+    <div class="container-xxl zcu-gutter mt-3 my-md-4">
+        <div class="row row-cols-xl-4 zcu-major-list">
+            <div class="col pb-1 pb-lg-3 mb-4">
+                <article class="card h-100 shadow zcu-hover-3">
+                    <div class="major-photo">
+                        <span class="badge">省级示范点</span>
+                        <img src="/content/_common/v3/images/zy-1.jpg"  alt="Image">
                     </div>
-                </div>
-            
-                <h2 id="intro">专业概览</h2>
-                
-                <div class="clearfix">
-                    <!-- <h3 id="intro-1">概览</h3> -->
-                    <!-- <figure class="figure col-md-6 col-xl-5 float-md-end mb-2 ms-md-3">
-                        <img src="images/1.jpeg" alt="计算机应用技术专业" class="figure-img img-fluid shadow" alt="...">
-                        <figcaption class="figure-caption text-center text-md-end">计算机应用技术专业课堂教学</figcaption>
-                    </figure> -->
-                    <div class="col-md-6 col-xl-5 float-md-end mb-2 ms-md-3">
-                        <video style="width:100%" poster="images/1.jpeg" preload="auto" controls="">
-                            <source src="images/zhuanye.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <p>
-                        计算机应用技术专业是河南省职业教育示范性专业点，校级重点建设专业，获批郑州市信创技术名师工作室，以高水平、高素质、高技能的“双师型”教学团队为支撑。
-                    </p>
-
-                    <p>
-                        专业建设成效显著，省级精品课程1项，建有校级高水平专业群1个、校级创新团队1个、校级思政课程建设3项、校级大学生校外实践基地18个、学生工作室2个，3项科研成果已成功应用到企业生产中。本专业不断深化“以赛促教、以赛促学”的教学体系，师生参加国家级、省级和市级各项大赛获奖近百余项。毕业生就业率保持在96%以上。
-                    </p>
-                </div>
-            <!-- <div class="row py-4 py-lg-5">
-                <div class="col-md-6 col-lg-7 order-md-2">
-                    <div class="position-relative h-100">
-                        <img src="images/1.jpeg"
-                            class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover rounded" alt="Image">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-5 order-md-1">
-                    <div class="pt-4">
-                        <p>在科学技术飞速发展的今天，信息技术产业是本世纪的朝阳产业和支柱产业。知识改变命运，现在决定未来。我将带领电子信息工程学院计算机系全体教职工努力工作，成为大家的良师益友，让计算机应用技术专业的学生学有所成，在人生的道路上谱写华采乐章！
+                    <div class="card-body pb-3">
+                        <h3>
+                            计算机应用技术
+                        </h3>
+                        <p class="meta">文理兼收 学制三年</p>
+                        <p class="slogan">省级新型示范点专业，信创名师工作室定向培养。
                         </p>
-                        <h6>院长 轩丹阳</h6>
                     </div>
-                </div>
-            </div> -->
-            
-                <h2 id="job">就业/升学前景</h2>
-                <div class="clearfix">
-                    
-                    <h3 id="job-1">就业前景</h3>
-                    <div class="col-md-6 col-xl-5 float-md-end mb-3 ms-md-3">
-                        <table class="table table-bordered table-responsive text-center table-hover">
-                            <thead class="table-light">
-                                <tr>
-                                    <th>岗位</th>
-                                    <th>平均薪资</th>
-                                    <th>最高薪资</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>软件开发</td>
-                                    <td>20W</td>
-                                    <td>100W+</td>
-                                </tr>
-                                <tr>
-                                    <td>前端开发</td>
-                                    <td>20W</td>
-                                    <td>100W+</td>
-                                </tr>
-                                <tr>
-                                    <td>信息技术服务</td>
-                                    <td>15W</td>
-                                    <td>80W+</td>
-                                </tr>
-                                <tr>
-                                    <td>网站工程师</td>
-                                    <td>18W</td>
-                                    <td>100W+</td>
-                                </tr>
-                                <tr>
-                                    <td>数据采集与分析</td>
-                                    <td>17W</td>
-                                    <td>80W+</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <p>
-                        随着5G时代的到来、“云大物移智”等新技术的发展和应用，数字经济的形态与内涵不断演进，现已进入了以数字化与智能化为代表的智能时代。当前国家正在大力推进数字化建设，充分挖掘计算机技术智能化应用，大力培育数字经济新业态，深入推进企业数字化转型，打造数据供应链，未来迫切需要一大批高素质的应用型计算机专业人才。
-                    </p>
-                    <h3 id="job-2">就业领域</h3>
-                    <p>
-                        计算机应用技术专业毕业生主要从事WEB前端开发、平面设计、网页设计、虚拟现实技术开发、软件系统维护及技术支持等岗位（群）或技术领域工作。薪资水平相对较高，较为可观。行业发展潜力大，随着信息化、数字化的不断推进，计算机应用技术领域的发展潜力巨大，为毕业生提供更多的职业发展机会和空间。
-                    </p>
-                </div>
-                
-                
-                <h3 id="job-4">升学成果</h3>
-
-                <div class="swiper zcu-swiper-student">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="student-box">
-                
-                                <div class="card">
-                                    <div class="card-body">
-                
-                                        <p class="card-title">刘恒毓 20级计算机应用技术专业</p>
-                                        <h4>考入华北水利水电大学</h4>
-                
-                                        <p class="mb-3 d-none d-md-block">
-                                            她说：作为计算机技术专业的学生，我深深地感受到了科技的力量和计算机技术的无限可能性。计算机科学不仅仅是一门技术，更是一种思考方式，一种解决问题的方法。在学习过程中，编程语言的复杂性、算法的难以理解、项目的庞大和繁琐，都让我有过想要放弃的念头。但是，我通过不断地学习和实践，逐渐克服了这些困难。我发现，每一次的困难和挑战，都是我成长的机会，都是我提升自己的契机。
-                                        </p>
-                
-                                    </div>
-                                </div>
-                
-                                <div class="photo">
-                                    <img src="images/6.jpg" alt="">
-                                </div>
-                
-                            </div>
-                
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="student-box">
-                
-                                <div class="card">
-                                    <div class="card-body">
-                
-                                        <p class="card-title">成真 20级计算机应用技术专业</p>
-                                        <h4>考入河南财经政法大学</h4>
-                
-                                        <p class="mb-3 d-none d-md-block">
-                                            她说：通过学习计算机应用技术，我不仅掌握了很多知识和技能，也提升了自己的思维能力和解决问题的能力。这种能力可以应用到生活的各个方面，无论是工作还是生活，都可以从中受益。学习计算机应用技术专业是一次非常宝贵的经历，它让我接触到了科技的力量，也让我明白了自己的潜力和价值。我相信，在未来的日子里，我会继续学习和成长，将计算机应用到更多的领域中，为社会做出更大的贡献。
-                                        </p>
-                
-                                    </div>
-                                </div>
-                
-                                <div class="photo">
-                                    <img src="images/7.jpg" alt="">
-                                </div>
-                
-                            </div>
-                
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            
-                <h2 id="course">课程设置</h2>
-                <p>在人工智能飞速发展的今天，计算机应用技术专业的人才培养紧贴行业发展前沿，才能永不掉队。同学们应当奋勇向前，扎实打好专业基础，在工业革命4.0这个时代做最前沿的弄潮儿。</p>
-                <p class="small">*课程信息仅供参考，具体将以实际开课信息为主。</p>
-                <!-- 根据系主任提供内容结合教育部文件归类 http://www.moe.gov.cn/s78/A07/zcs_ztzl/2017_zt06/17zt06_bznr/bznr_zdzyxxzyml/gaozhizhuan/dianzi/202209/P020220905513303897213.pdf -->
-                <div class="zcu-accordion">
-                    <div class="accordion-item">
-                        <h3 class="accordion-title" >
-                            第一学年
-                        </h3>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                
-                                <ul class="course-list">
-                                    <li><span>计算机导论</span></li>
-                                    <li><span>程序设计基础</span></li>
-                                    <li><span>数据结构与算法分析</span></li>
-                                    <li><span>计算机组成与维护</span></li>
-                                    <li><span>计算机网络基础</span></li>
-                                
-                                    <li><span>信息技术</span></li>
-                                    <li><span>数据库技术与应用</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-title">
-                            第二学年
-                        </h3>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <ul class="course-list">
-                                    <li><span>前端设计与开发</span></li>
-                                    <li><span>网站开发技术</span></li>
-                                    <li><span>数据分析方法</span></li>
-                                    <li><span>图形图像处理</span></li>
-                                
-                                    <li><span>vue.js前端开发实战</span></li>
-                                    <li><span>微信小程序开发</span></li>
-                                    <li><span>交换路由技术应用综合实践</span></li>
-                                    <li><span>前端设计与开发综合实践</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-title">
-                            第三学年
-                        </h3>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <div>
-                                    
-                                </div>
-                                <ul class="course-list">
-                                    <li>在多家业内知名企业顶岗实习，岗位有：</li>
-                                    <li><span>软件开发</span></li>
-                                    <li><span>前端开发</span></li>
-                                    <li><span>信息技术服务</span></li>
-                                    <li><span>网站工程师</span></li>
-                                    <li><span>数据采集与分析</span></li>
-                                    <li><span>...</span></li>
-                                </ul>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="row">
-                    <div class="col-12 col-md-4">
-                        <div class="course-box p-2">
-                            <div class="grade fw-bold text-center border-bottom">第一学年</div>
-                            <div class="btn">专业基础课</div>
-                            <ul class="course-list">
-                                <li><span>计算机导论</span></li>
-                                <li><span>程序设计基础</span></li>
-                                <li><span>数据结构与算法分析</span></li>
-                                <li><span>计算机组成与维护</span></li>
-                                <li><span>计算机网络基础</span></li>
-                            </ul>
-                            <div class="btn">专业核心课</div>
-                            <ul>
-                                <li><span>信息技术</span></li>
-                                <li><span>数据库技术与应用</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="course-box p-2">
-                            <div class="grade fw-bold text-center border-bottom">第二学年</div>
-                            <div class="btn">专业核心课</div>
-                            <ul class="course-list">
-                                <li><span>前端设计与开发</span></li>
-                                <li><span>网站开发技术</span></li>
-                                <li><span>数据分析方法</span></li>
-                                <li><span>图形图像处理</span></li>
-                            </ul>
-                            <div class="btn">专业拓展课</div>
-                            <ul>
-                                <li><span>vue.js前端开发实战</span></li>
-                                <li><span>微信小程序开发</span></li>
-                                <li><span>交换路由技术应用综合实践</span></li>
-                                <li><span>前端设计与开发综合实践</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="course-box p-2">
-                            <div class="grade fw-bold text-center border-bottom">第三学年</div>
-                            <div class="btn">岗位实习</div>
-                            <ul class="course-list">
-                                <li><span>国信蓝桥教育有限公司</span></li>
-                                <li><span>北京千锋互联有限公司</span></li>
-                                <li><span>郑州融友北游信息科技有限公司</span></li>
-                                <li><span>软件开发</span></li>
-                                <li><span>前端开发</span></li>
-                                <li><span>信息技术服务</span></li>
-                                <li><span>网站工程师</span></li>
-                                <li><span>数据采集与分析</span></li>
-                                <li><span>...</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
-
-                <div class="row zcu-cta">
-                    <div class="col-lg-10 offset-lg-1 col-md-12">
-                        <div class="row align-items-center">
-                            <div class="col-lg-8 col-md-7">
-                                <div class="text-center text-md-start">
-                                    <h3>如何选择职业</h3>
-                                    <p>无论你处于职业生涯的哪个阶段，这里都能为你提供关键的洞察和指导，不收取任何费用哦！快来点击测评吧！</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-5">
-                                <div class="text-center">
-                                    <a href="#" class="btn btn-light">职业兴趣测评</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h2 id="knowledge">知识与能力</h2>
-                
-                <div class="clearfix">
-                    <h3 id="knw-1">培养目标</h3>
-                    <figure class="figure col-md-6 col-xl-5 float-md-end mb-3 ms-md-3">
-                        <img src="images/2.jpeg" alt="计算机应用技术专业" class="figure-img img-fluid rounded" alt="...">
-                        <figcaption class="figure-caption text-center text-md-end">计算机应用技术专业课堂教学</figcaption>
-                    </figure>
-                    <p>计算机应用技术专业结合翻转课堂、线上线下混合式教学、案例教学等多种教学模式与教学方法，实践教学对标行业标准，使得学生掌握前沿的专业和知识、具备专业实践能力，面向软件和信息技术服务、互联网和相关服务等行业的信息和通信工程技术人员、信息通信网络运行管理人员、软件和信息技术服务人员等职业，能够从事程序设计、数据采集与分析、网络管理、信息系统运行维护等工作的高素质技术技能人才。
-                    </p>
-                    <h3 id="knw-2">证书</h3>
-                    <p>
-                        计算机应用技术专业深化“学历证书+若干职业技能等级证书”证书制度，鼓励学生在获得学历证书的同时，冲击多项顶尖职业资格证书，紧跟行业企业发展前沿，实现专业学习与企业岗位需求精准对接，实现高质量就业。职业认证有计算机技术与软件专业技术资格（水平）考试证书，以及教育部考试中心相关证书，如下：
-                    </p>
-                </div>
-                
-                    <div class="row zcu-job-list">
-                        <div class="col-sm-4">
-                            <div>程序员</div>
-                            <div>网络管理员</div>
-                            <div>信息处理技术员</div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div>软件设计师</div>
-                            <div>网络工程师</div>
-                            <div>软件测评师</div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div>网络规划设计师</div>
-                            <div>系统架构设计师</div>
-                            <div>Web程序设计</div>
-                        </div>
-                    </div>
-
-                <!-- <h3 id="knw-4">实习机会</h3> -->
-            
-                <h2 id="teacher">师资力量</h2>
-            
-                <p>计算机应用技术专业构建“师德师风、专业教学、专业实践、科研创新和专业建设”教师团队五维数字画像，以高素质“双师型”教师标准引领团队深化专业内涵建设。拥有一支以教授、博士为学术带头人，学历、职称结构合理，教学、科研水平过硬的师资队伍，专兼职教师、特聘教授共计15人，其中博士学位1人，高级职称4人，河南省学术技术带头人2人，河南省教学标兵3人，河南省骨干教师3人。</p>
-
-                <div class="swiper zcu-swiper-teacher">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="teacher-box">
-                                <div class="photo">
-                                    <img src="images/t1.jpg" alt="张德贤">
-                                </div>
-                            
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="card-title">张德贤 教授、博士</div>
-                                        <h4>河南省科技创新杰出人才基金获得者</h4>
-                                        <p class="card-text">
-                                            长期从事智能信息处理、人工智能等方面的教学科研工作；先后完成国家“十一五”科技支撑计划、863 计划、国家重点研发计划等省部级以上教学科研项目 20 余项；获得河南省科技进步奖、河南省教学成果奖等省部级以上教学科研奖励 8
-                                            项；其中，中国粮油学会科学技术一等奖1项、河南省科技进步二等奖2项；发表论文150余篇，其中SCI/EI收录100余篇；出版著作3部，授权发明专利 30 余项。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="teacher-box ">
-                                <div class="photo">
-                                    <img src="images/t2.jpg" alt="">
-                                </div>
-                            
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="card-title">刘伟丽 副教授</div>
-                                        <h4 >河南省双师型教师</h4>
-                                        <p class="card-text">
-                                            近年来发表论文10余篇，其中中文核心2篇；申请实用新型专利2项；主持参与各级各类项目10余项，主编教材3部；所指导的学生参加全国计算机能力挑战赛中荣获一等奖；河南省教学标兵、河南省骨干教师；河南省教育厅学术技术带头人。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="teacher-box ">
-                                <div class="photo">
-                                    <img src="images/t3.jpg" alt="">
-                                </div>
-                            
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="card-title">马士玲 副教授、副院长</div>
-                                        <h4>河南省双师型教师</h4>
-                                        <p class="card-text">
-                                            研究方向为计算机网络与信息安全；曾主持并参与6项市厅级教科研项目；参编专业教材2部，发表论文6篇；在河南省教育系统教学技能竞赛（高校工科组）获三等奖。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="teacher-box ">
-                                <div class="photo">
-                                    <img src="images/t4.jpg" alt="">
-                                </div>
-                            
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="card-title">徐俊格 骨干教师</div>
-                                        <p class="card-text">
-                                            6年软件工程师工作经历，主要从事Linux嵌入式应用程序开发、Android App开发；发表论文2篇，并考取了华为HCIA工程师证；指导学生参加“蓝桥杯全国软件和信息技术专业人才大赛”，获得国赛三等奖，省赛二等奖。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="teacher-box ">
-                                <div class="photo">
-                                    <img src="images/t5.jpg" alt="">
-                                </div>
-                            
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="card-title">郑伟丽 副教授</div>
-                                        <p class="card-text">
-                                            参与主编《网页设计与制作》《网页设计与制作项目化教程》《C语言程序设计》《前端设计与开发》《PLC》等多部教材；曾主持并参与多项校级、厅级、省级教科研项目；荣获河南省教育厅一等奖1项、科技成果二等奖2项。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                
-                    <!-- If we need scrollbar -->
-                    <!-- <div class="swiper-scrollbar"></div> -->
-                </div>
-                <!-- <div class="row align-items-stretch">
-                    <div class="col-12 col-md-5">
-                        <div class="card h-100 shadow-sm border-0 overflow-hidden px-md-4">
-                            <span
-                                class="bg-gradient-primary position-absolute top-0 start-0 w-100 h-100 opacity-25 d-none d-md-block"></span>
-                            <div
-                                class="card-body d-flex flex-column align-items-center justify-content-center position-relative zindex-2 p-0 pb-2 p-lg-4">
-                                <h3 class="text-center text-md-start p-lg-4">师资团队</h3>
-                                <p>计算机应用技术专业构建“师德师风、专业教学、专业实践、科研创新和专业建设”教师团队五维数字画像，以高素质“双师型”教师标准引领团队深化专业内涵建设。拥有一支以教授、博士为学术带头人，学历、职称结构合理，教学、科研水平过硬的师资队伍，专兼职教师、特聘教授共计15人，其中博士学位1人，高级职称4人，河南省学术技术带头人2人，河南省教学标兵3人，河南省骨干教师3人。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <div class="card border-0 shadow-sm h-100 p-4 p-xxl-5">
-                            <div class="d-flex justify-content-between pb-4 mb-2">
-                                <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none">
-                                    <i class="bi-quote"></i>
-                                </span>
-                                <div class="d-flex">
-                                    <button type="button" id="prev" class="btn btn-prev btn-icon btn-sm me-2" aria-label="Previous slide"
-                                        tabindex="0">
-                                        <i class="bi-chevron-left"></i>
-                                    </button>
-                                    <button type="button" id="next" class="btn btn-next btn-icon btn-sm ms-2" aria-label="Next slide" tabindex="0">
-                                        <i class="bi-chevron-right"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="swiper zcu-swiper-teacher">
-                                <div class="swiper-wrapper">
-                                    
-                                    <div class="swiper-slide">
-                                        <figure class="card h-100 position-relative border-0 bg-transparent">
-                                            <figcaption class="card-header border-0 d-flex align-items-center w-100 mb-2">
-                                                <img src="images/t1.jpg" width="60" class="rounded-circle" alt="张德贤">
-                                                <div class="ps-3">
-                                                    <h6 class="fw-semibold lh-base mb-0">张德贤 教授、博士</h6>
-                                                    <span class="fs-sm text-muted">河南省科技创新杰出人才基金获得者</span>
-                                                </div>
-                                            </figcaption>
-                                            <blockquote class="card-body p-0 mb-0">
-                                                <ul class="zcu-teacher-list">
-                                                    <li>长期从事智能信息处理、人工智能等方面的教学科研工作；</li>
-                                                    <li>先后完成国家“十一五”科技支撑计划、863 计划、国家重点研发计划等省部级以上教学科研项目 20 余项；</li>
-                                                    <li>获得河南省科技进步奖、河南省教学成果奖等省部级以上教学科研奖励 8 项；其中，中国粮油学会科学技术一等奖1项、河南省科技进步二等奖2项；</li>
-                                                    <li>发表论文150余篇，其中SCI/EI收录100余篇；</li>
-                                                    <li>出版著作3部，授权发明专利 30 余项。</li>
-                                                </ul>
-                                            </blockquote>
-                                            
-                                        </figure>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <figure class="card h-100 position-relative border-0 bg-transparent">
-                                            <figcaption class="card-header border-0 d-flex align-items-center w-100 mb-2">
-                                                <img src="images/t2.jpg" width="60" class="rounded-circle" alt="">
-                                                <div class="ps-3">
-                                                    <h6 class="fw-semibold lh-base mb-0">刘伟丽 副教授</h6>
-                                                    <span class="fs-sm text-muted">河南省双师型教师</span>
-                                                </div>
-                                            </figcaption>
-                                            <blockquote class="card-body p-0 mb-0">
-                                                <ul class="zcu-teacher-list">
-                                                    <li>近年来发表论文10余篇，其中中文核心2篇；</li>
-                                                    <li>申请实用新型专利2项；</li>
-                                                    <li>主持参与各级各类项目10余项，主编教材3部；</li>
-                                                    <li>所指导的学生参加全国计算机能力挑战赛中荣获一等奖；</li>
-                                                    <li>河南省教学标兵、河南省骨干教师；</li>
-                                                    <li>河南省教育厅学术技术带头人。</li>
-                                                </ul>
-                                            </blockquote>
-                                    
-                                        </figure>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <figure class="card h-100 position-relative border-0 bg-transparent">
-                                            <figcaption class="card-header border-0 d-flex align-items-center w-100 mb-2">
-                                                <img src="images/t3.jpg" width="60" class="rounded-circle" alt="">
-                                                <div class="ps-3">
-                                                    <h6 class="fw-semibold lh-base mb-0">马士玲 副教授、副院长</h6>
-                                                    <span class="fs-sm text-muted">河南省双师型教师</span>
-                                                </div>
-                                            </figcaption>
-                                            <blockquote class="card-body p-0 mb-0">
-                                                <ul class="zcu-teacher-list">
-                                                    <li>研究方向为计算机网络与信息安全；</li>
-                                                    <li>曾主持并参与6项市厅级教科研项目；</li>
-                                                    <li>参编专业教材2部，发表论文6篇；</li>
-                                                    <li>在河南省教育系统教学技能竞赛（高校工科组）获三等奖。</li>
-                                                </ul>
-                                            </blockquote>
-                                    
-                                        </figure>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <figure class="card h-100 position-relative border-0 bg-transparent">
-                                            <figcaption class="card-header border-0 d-flex align-items-center w-100 mb-2">
-                                                <img src="images/t4.jpg" width="60" class="rounded-circle" alt="">
-                                                <div class="ps-3">
-                                                    <h6 class="fw-semibold lh-base mb-0">徐俊格 骨干教师</h6>
-                                                    <span class="fs-sm text-muted"></span>
-                                                </div>
-                                            </figcaption>
-                                            <blockquote class="card-body p-0 mb-0">
-                                                <ul class="zcu-teacher-list">
-                                                    <li>6年软件工程师工作经历，主要从事Linux嵌入式应用程序开发、Android App开发；</li>
-                                                    
-                                                    <li>发表论文2篇，并考取了华为HCIA工程师证；</li>
-                                                    
-                                                    <li>指导学生参加“蓝桥杯全国软件和信息技术专业人才大赛”，获得国赛三等奖，省赛二等奖。</li>
-                                                    
-                                                </ul>
-                                            </blockquote>
-                                    
-                                        </figure>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <figure class="card h-100 position-relative border-0 bg-transparent">
-                                            <figcaption class="card-header border-0 d-flex align-items-center w-100 mb-2">
-                                                <img src="images/t5.jpg" width="60" class="rounded-circle" alt="">
-                                                <div class="ps-3">
-                                                    <h6 class="fw-semibold lh-base mb-0">郑伟丽 副教授</h6>
-                                                    <span class="fs-sm text-muted"></span>
-                                                </div>
-                                            </figcaption>
-                                            <blockquote class="card-body p-0 mb-0">
-                                                <ul class="zcu-teacher-list">
-                                                    <li>参与主编《网页设计与制作》《网页设计与制作项目化教程》《C语言程序设计》《前端设计与开发》《PLC》等多部教材；</li>
-                                                    
-                                                    <li>曾主持并参与多项校级、厅级、省级教科研项目；</li>
-                                                    
-                                                    <li>荣获河南省教育厅一等奖1项、科技成果二等奖2项。</li>
-                                                    
-                                                </ul>
-                                            </blockquote>
-                                    
-                                        </figure>
-                                    </div>
-                                </div>
-                                
-                                <div class="swiper-pagination"></div>
-
-                                
-                                <div class="swiper-scrollbar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <h2 id="teaching">教学特色</h2>
-                <h3 id="teach-1">OBE教学理念</h3>
-                <p>
-                    计算机应用技术专业以“产业带教育，教育促产业”的产教融合教育理念，坚持把“实训＋实习”的教学形态、“做中学、学中做、真题实做”的教学方式贯穿整个专业教育过程，实现人才专业综合能力与产业需求无缝对接。
-                </p>
-            
-                <h3 id="teach-2">名企协同</h3>
-            
-                <p>与国信蓝桥教育有限公司、北京千锋互联有限公司、郑州融友北游信息科技有限公司等企业签署校企合作协议。
-                </p>
-                <h2 id="training">优质的实验实训条件</h2>
-                <p>
-                    计算机应用技术专业拥有人工智能训练实训室、网站建设实训室、软件开发实训室、计算机应用实训室、交互设计实训室等共12个校内实训室，校企共建课程4门，共建实验室5间，功能齐全、产教融合、特色鲜明，能够完全满足日常教学、职业技能等级证书训练、社会服务等需要。
-                </p>
-
-                <div class="swiper zcu-swiper-default">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="card zcu-card border-0">
-                                <img src="images/3.jpg" class="card-img" alt="...">
-                                <div class="card-img-overlay">
-                                    <div class="zcu-card-title">
-                                        <div>计算机应用技术专业实训室</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card zcu-card border-0">
-                                <img src="images/4.jpg" class="card-img" alt="...">
-                                <div class="card-img-overlay">
-                                    <div class="zcu-card-title">
-                                        <div>计算机应用技术专业实训室</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card zcu-card border-0">
-                                <img src="images/5.jpg" class="card-img" alt="...">
-                                <div class="card-img-overlay">
-                                    <div class="zcu-card-title">
-                                        <div>计算机应用技术专业实训室</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                
-                    <!-- If we need scrollbar -->
-                    <!-- <div class="swiper-scrollbar"></div> -->
-                </div>
-
-                <h2 id="honor">学生竞赛获奖成果</h2>
-                <p>计算机应用技术专业主要致力于国家所提倡的56项大学生竞赛中，学生在“蓝桥杯”全国软件和信息技术专业人才大赛、全国高校计算机能力挑战赛等竞赛中，获得国赛一等奖3项、二等奖13项、三等奖9项，省赛一等奖3项、二等奖18项、三等奖5项。
-                </p>
-                    <div class="swiper zcu-swiper-honor">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <div class="honor-box">
-                                    <img src="images/29.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="honor-box">
-                                    <img src="images/24.jpeg" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="honor-box">
-                                    <img src="images/25.jpeg" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="honor-box">
-                                    <img src="images/26.jpeg" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="honor-box">
-                                    <img src="images/27.jpeg" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="honor-box">
-                                    <img src="images/28.jpeg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-                    
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    
-                        <!-- If we need scrollbar -->
-                        <!-- <div class="swiper-scrollbar"></div> -->
-                    </div>
-                        
-
-                
-            
-                <h2 id="student">明星学子</h2>
-                <div class="swiper zcu-swiper-student">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="student-box">
-
-                                <div class="card">
-                                    <div class="card-body">
-
-                                        <h4 class="mb-2">王飞 2019届毕业生</h4>
-                                        <p class="mb-3">现工作于广东坚朗五金制品有限公司，总经理助理</p>
-
-                                        <p class="mb-3 d-none d-md-block">
-                                            他说：任何公司都需要IT人才进行数据整合分析、网络运营等工作，而在城院的实践经验让我很容易就找到心仪的工作单位。
-                                        </p>
-
-                                    </div>
-                                </div>
-
-                                <div class="photo">
-                                    <img src="images/8.jpg" alt="">
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="student-box">
-
-                                <div class="card">
-                                    <div class="card-body">
-
-                                        <h4 class="mb-2">李政辉 2020届毕业生</h4>
-                                        <p class="mb-3">现工作于登封市公安局</p>
-
-                                        <p class="mb-3 d-none d-md-block">
-                                            他说：计算机人才具有的广泛就业特征在我身上最能体现，高科技大数据的运用助力了一宗宗的案件侦破，这是一个热门专业！
-                                        </p>
-
-                                    </div>
-                                </div>
-
-                                <div class="photo">
-                                    <img src="images/9.jpg"  alt="">
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-
-                <div class="zcu-yzs">
-                    <div class="photo">
-                        <img src="images/t6.jpg" width="120" alt="">
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="mb-3">在科学技术飞速发展的今天，信息技术产业是本世纪的朝阳产业和支柱产业。知识改变命运，现在决定未来。我将带领电子信息工程学院计算机系全体教职工努力工作，成为大家的良师益友，让计算机应用技术专业的学生学有所成，在人生的道路上谱写华采乐章！
-                            </p>
-                            <h6 class="mb-0">院长 轩丹阳</h6>
-                        </div>
-                    </div>
-                </div>
-            
+                    <a href="#" class="d-block position-absolute w-100 h-100 top-0 start-0"></a>
+                </article>
             </div>
-
-            <div class="zcu-sidebar">
-                <!-- <div class="zcu-news">
-                    <div class="zcu-sidebar-title h3">最新动态</div>
-                    <ul class="zcu-news-list row">
-                        <li class="col-12 col-md-6 bg-light p-3">
-                            <div class="zcu-news-date">2024年6月9日</div>
-                            <div class="zcu-news-title">郑州城市职业学院与岚图汽车订单班—青禾计划开班仪式圆满举行</div>
-                        </li>
-                        <li class="col-12 col-md-6 bg-light p-3">
-                            <div class="zcu-news-date">2024年5月15日</div>
-                            <div class="zcu-news-title">深化产教融合，提升育人质量—智能制造学院与长城汽车召开校企合作会议</div>
-                        </li>
-                    </ul>
-                </div> -->
-                <!-- <div class="row">
-                    <div class="zcu-ac-intro bg-light p-3  mb-2 shadow col-12 col-md-6">
-                        <p class="content">智能制造学院开设有机电一体化、机械设计与制造、机械制造及自动化、新能源汽车技术、汽车制造与试验技术和汽车检测与维修6个专业，着力培养社会经济发展急需的高素质复合型人才。</p>
-                        <p><i class="bi-arrow-right"></i>了解更多</p>
+            <div class="col pb-1 pb-lg-3 mb-4">
+                <article class="card h-100">
+                    <div class="major-photo">
+                        <span class="badge">省级示范点</span>
+                        <img src="/content/_common/v3/images/zy-1.jpg" alt="Image">
                     </div>
-                    <div class="zcu-test bg-primary text-white p-3 mb-2 shadow col-12 col-md-6">
-                        <p class="content">
-                            你是哪一种类型呢？匹配的职业又有哪些？根据职业兴趣，选择合适的专业，把自己放到合适的位置上，会起到事半功倍的效果哦！
+                    <div class="card-body pb-3">
+                        <h3>
+                            计算机应用技术
+                        </h3>
+                        <p class="meta">文理兼收 学制三年</p>
+                        <p class="slogan">省级新型示范点专业，信创名师工作室定向培养。
                         </p>
-                        <p><i class="bi-arrow-right"></i>去测试职业兴趣</p>
                     </div>
-                </div> -->
+                    <a href="#"></a>
+                </article>
             </div>
-        </main>
-
+        </div>
     </div>
 
     <div class="zcu-major">
@@ -1049,14 +216,17 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
                     data-bs-target="#bdSidebar"></button>
             </div>
-    
+
             <div class="offcanvas-body">
                 <nav class="zcu-links w-100" id="zcu-docs-nav" aria-label="Docs navigation">
                     <ul class="zcu-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
                         <li class="zcu-links-group py-2">
                             <strong class="zcu-links-heading d-flex w-100 align-items-center fw-semibold">
-                                <svg class="bi me-2" style="color: var(--bs-blue);" aria-hidden="true">
-                                    <use xlink:href="#row-fill"></use>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi me-2"
+                                    fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z">
+                                    </path>
                                 </svg>
                                 电子信息工程学院
                             </strong>
@@ -1100,8 +270,11 @@
 
                         <li class="zcu-links-group py-2">
                             <strong class="zcu-links-heading d-flex w-100 align-items-center fw-semibold">
-                                <svg class="bi me-2" style="color: var(--bs-blue);" aria-hidden="true">
-                                    <use xlink:href="#row-fill"></use>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi me-2"
+                                    fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z">
+                                    </path>
                                 </svg>
                                 材料工程学院
                             </strong>
@@ -1116,8 +289,11 @@
                         </li>
                         <li class="zcu-links-group py-2">
                             <strong class="zcu-links-heading d-flex w-100 align-items-center fw-semibold">
-                                <svg class="bi me-2" style="color: var(--bs-blue);" aria-hidden="true">
-                                    <use xlink:href="#row-fill"></use>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi me-2"
+                                    fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z">
+                                    </path>
                                 </svg>
                                 建筑工程学院
                             </strong>
@@ -1153,8 +329,11 @@
 
                         <li class="zcu-links-group py-2">
                             <strong class="zcu-links-heading d-flex w-100 align-items-center fw-semibold">
-                                <svg class="bi me-2" style="color: var(--bs-blue);" aria-hidden="true">
-                                    <use xlink:href="#row-fill"></use>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi me-2"
+                                    fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z">
+                                    </path>
                                 </svg>
                                 智能制造学院
                             </strong>
@@ -1184,8 +363,11 @@
                         </li>
                         <li class="zcu-links-group py-2">
                             <strong class="zcu-links-heading d-flex w-100 align-items-center fw-semibold">
-                                <svg class="bi me-2" style="color: var(--bs-blue);" aria-hidden="true">
-                                    <use xlink:href="#row-fill"></use>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi me-2"
+                                    fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z">
+                                    </path>
                                 </svg>
                                 商学院
                             </strong>
@@ -1218,8 +400,11 @@
                         </li>
                         <li class="zcu-links-group py-2">
                             <strong class="zcu-links-heading d-flex w-100 align-items-center fw-semibold">
-                                <svg class="bi me-2" style="color: var(--bs-blue);" aria-hidden="true">
-                                    <use xlink:href="#row-fill"></use>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi me-2"
+                                    fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z">
+                                    </path>
                                 </svg>
                                 文化教育学院
                             </strong>
@@ -1248,7 +433,7 @@
                         </li>
                     </ul>
                 </nav>
-    
+
             </div>
         </div>
     </div>
@@ -1258,7 +443,8 @@
             <div class="row align-items-center">
 
                 <div class="col-md-4 col-lg-3 text-center text-md-start">
-                    <img src="https://www.zcu.edu.cn/content/_common/zcu/images/logo-dark@2x.png" alt="郑州城市职业学院" class="logo img-fluid">
+                    <img src="https://www.zcu.edu.cn/content/_common/zcu/images/logo-dark@2x.png" alt="郑州城市职业学院"
+                        class="logo img-fluid">
                 </div>
 
                 <div class="col-md-8 col-lg-4 text-center text-md-start">
@@ -1268,34 +454,39 @@
                     邮箱：zzcszyxy618@163.com<br>
                     版权所有 © 2023 郑州城市职业学院<br>
                     <div class="py-2">
-                        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">豫ICP备12014925号-1</a> / <a
-                            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41018302000187" target="_blank"
-                            rel="noopener noreferrer">豫公网安备 41018302000187号</a>
+                        <a href="https://beian.miit.gov.cn/" target="_blank"
+                            rel="noopener noreferrer">豫ICP备12014925号-1</a> / <a
+                            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41018302000187"
+                            target="_blank" rel="noopener noreferrer">豫公网安备 41018302000187号</a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-5 text-center">
+                <div class="col-12 col-md-8 offset-md-4 col-lg-5 offset-lg-0 text-center">
                     <div class="row">
                         <div class="col-3">
-                            <img src="https://www.zcu.edu.cn/content/_common/v2/images/social/weixin.jpg" alt="官方微信公众号" class="img-fluid">
-                        <br>
-                        <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA5OTg2OTE1Ng==&amp;action=getalbum&amp;album_id=2393721616590782469&amp;scene=126#wechat_redirect"
-                            target="_blank" title="官方微信公众号">官方微信公众号</a>
+                            <img src="https://www.zcu.edu.cn/content/_common/v2/images/social/weixin.jpg" alt="官方微信公众号"
+                                class="img-fluid">
+                            <br>
+                            <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA5OTg2OTE1Ng==&amp;action=getalbum&amp;album_id=2393721616590782469&amp;scene=126#wechat_redirect"
+                                target="_blank" title="官方微信公众号">官方微信公众号</a>
                         </div>
                         <div class="col-3">
-                            <img src="https://www.zcu.edu.cn/content/_common/v2/images/social/weibo.jpg" alt="官方微博" class="img-fluid">
+                            <img src="https://www.zcu.edu.cn/content/_common/v2/images/social/weibo.jpg" alt="官方微博"
+                                class="img-fluid">
                             <br>
                             <a href="https://weibo.com/u/7674037481" target="_blank" title="官方微博">官方微博</a>
                         </div>
                         <div class="col-3">
-                            <img src="https://www.zcu.edu.cn/content/_common/v2/images/social/douyin.jpg" alt="官方抖音" class="img-fluid">
+                            <img src="https://www.zcu.edu.cn/content/_common/v2/images/social/douyin.jpg" alt="官方抖音"
+                                class="img-fluid">
                             <br>
                             <a href="https://www.douyin.com/user/MS4wLjABAAAA-mZeYz7hw538fARR5-TR4kWrgXUvTimwVBNRwuS56dFTdjo5f9umgGEbrcdeXxud"
                                 target="_blank" title="官方抖音">官方抖音</a>
                         </div>
                         <div class="col-3">
-                            <img src="https://www.zcu.edu.cn/content/_common/v2/images/jubao.jpg" class="img-fluid">
+                            <img src="https://www.zcu.edu.cn/content/_common/v3/images/jubao.jpg" class="img-fluid">
                             <br>
-                            <a href="http://szxingaojiao.com/Z_WX/15_Report/ReportMain.aspx?schoolName=郑州城市职业学院" title="廉洁举报中心">廉洁举报中心</a>
+                            <a href="http://szxingaojiao.com/Z_WX/15_Report/ReportMain.aspx?schoolName=郑州城市职业学院"
+                                title="廉洁举报中心">廉洁举报中心</a>
                         </div>
                     </div>
 
@@ -1307,8 +498,8 @@
 
     <!-- Share to social media -->
     <!-- <div class="share position-fixed"> -->
-        <!-- HTML to write -->
-        <!-- <button class="btn btn-zcu-primary d-flex align-items-center justify-content-center" id="zcu-share"
+    <!-- HTML to write -->
+    <!-- <button class="btn btn-zcu-primary d-flex align-items-center justify-content-center" id="zcu-share"
             type="button" aria-label="分享">
             <svg xmlns="http://www.w3.org/2000/svg" class="bi my-1 theme-icon-active" width="1em" height="1em" class="bi bi-share"
                 viewBox="0 0 16 16">
@@ -1394,7 +585,7 @@
             </div>
         </div>
     </div>
-    <!-- <script src="/vendor/headhesive/headhesive.min.js"></script> -->
+    <!-- <script src="./vendor/headhesive/headhesive.min.js"></script> -->
     <script type="module" src="../src/js/main.js"></script>
     <!-- <script src="./js/color-mode.js"></script> -->
     <link rel="stylesheet" href="/vendor/social-share/css/share.min.css">
@@ -1403,14 +594,15 @@
         // social Share
         // qrcode待升级(https://github.com/kazuhikoarase/qrcode-generator/tree/master/js)
 
-            if (null != document.querySelector(".zcu-social-share")) {
-                socialShare('.zcu-social-share', {
-                    sites: ['wechat', 'qq', 'weibo', 'qzone',],
-                    wechatQrcodeTitle: "微信扫一扫：分享", // 微信二维码提示文字
-                    wechatQrcodeHelper: '<p>微信里点“发现”，扫一下</p><p>二维码便可将本文分享至朋友圈。</p>',
-                });
-            }
+        if (null != document.querySelector(".zcu-social-share")) {
+            socialShare('.zcu-social-share', {
+                sites: ['wechat', 'qq', 'weibo', 'qzone',],
+                wechatQrcodeTitle: "微信扫一扫：分享", // 微信二维码提示文字
+                wechatQrcodeHelper: '<p>微信里点“发现”，扫一下</p><p>二维码便可将本文分享至朋友圈。</p>',
+            });
+        }
     </script>
 
 </body>
+
 </html>

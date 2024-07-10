@@ -276,7 +276,7 @@
         background: #fff;
         border-radius: 0px;
         box-shadow: var(--zcu-box-shadow-sm);
-        bottom: 1rem;
+        top: 1rem;
         font-size: 1.25rem;
         padding: 0.5rem 1.5rem 0.5rem 1.5rem;
         position: absolute;
@@ -315,7 +315,7 @@
     }
 
     .search-wrapper.active .search-input {
-        width: 15rem;
+        width: 100%;
     }
 
     .search-wrapper .search-input {
@@ -324,7 +324,7 @@
         height: 1.625rem;
         margin: 0 .75rem;
         transition: width .5s ease;
-        width: 3.685rem;
+        width: 100%;
     }
 
     .search-wrapper .search-input:focus {
@@ -362,9 +362,9 @@
 
     .search-result {
         position: absolute;
+        top: 5rem;
         right: 0;
-        width: 28.75rem;
-        margin-top: -1rem;
+        width: 100%;
         display: none;
         list-style: none;
         max-height: 17rem;
@@ -403,6 +403,29 @@
         }
     }
 
+}
+
+@include media-breakpoint-up(md) {
+    .zcu-search {
+        .search-wrapper {
+            top: auto;
+            bottom: 1rem;
+        }
+
+        .search-wrapper.active .search-input {
+            width: 15rem;
+        }
+
+        .search-wrapper .search-input {
+            width: 3.685rem;
+        }
+
+        .search-result {
+            top: auto;
+            margin-top: -1rem;
+            width: 28.75rem;
+        }
+    }
 }
 
 .zcu-major-list {
