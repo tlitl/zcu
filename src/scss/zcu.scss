@@ -1445,9 +1445,17 @@
     }
 }
 
-#bdNavbar {
-    .offcanvas-header {
-        padding-right: calc(var(--zcu-gutter-x) * 0.5);
+.offcanvas-header {
+    padding: 0.75rem 0.5rem;
+
+    .offcanvas-title {
+        line-height: 2.5rem;
+    }
+
+    .btn-close {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.75rem;
     }
 }
 
