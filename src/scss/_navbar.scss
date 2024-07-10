@@ -156,8 +156,8 @@
                 .nav-item {
                     .nav-link {
                         --zcu-nav-link-color: var(--zcu-navbar-color);
-                        font-size: 1.5vw;
-                        padding: .5vw .75vw;
+                        font-size: 1.25vw;
+                        padding: .5vw .875vw;
                         border-bottom: 0;
                         text-indent: 0;
                     }
@@ -176,12 +176,14 @@
                         transform: translate(-50%, 10px);
                         transition: all .3s ease-in-out;
                         visibility: hidden;
+                        min-width: 10vw;
 
                         li {
                             border-bottom: 0;
                             width: 100%;
                             .dropdown-item {
                                 --zcu-dropdown-link-color: var(--zcu-navbar-color);
+                                font-size: 1vw;
                                 &:hover {
                                     --zcu-dropdown-link-color: var(--zcu-brand-color);
                                 }
@@ -227,10 +229,23 @@
     #bdNavbar {
         .offcanvas-body {
             .navbar-nav {
-                .nav-link {
-                    font-size: 1.5vw;
-                    padding: .5vw .75vw;
-                    border-bottom: 0;
+                .nav-item {
+                    .nav-link {
+                        font-size: 1.5vw;
+                        padding: .5vw .75vw;
+                        border-bottom: 0;
+                    }
+                }
+                .dropdown {
+                    .dropdown-menu {
+                        min-width: 10rem;
+
+                        li {
+                            .dropdown-item {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
                 }
             }
         }
