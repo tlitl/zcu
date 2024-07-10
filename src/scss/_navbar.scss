@@ -1,199 +1,254 @@
-.navbar-brand img {
-    max-width: 12rem;
-}
-
-.zcu-navbar .dropdown-toggle:focus:not(:focus-visible) {
-    outline: 0
-}
-
-.zcu-navbar .dropdown-menu {
-    font-size: .75rem;
-    border: 0;
-    border-radius: 0;
-    
-    z-index: 1021;
-    background-color: transparent;
-    box-shadow: none;
-    min-width: 10rem ;
-    border-bottom: 1px solid var(--zcu-gray-200);
-
-    li {
-        width: 33.3%;
-        float: left;
-        text-align: center;
-    }
-
-    // li+li {
-    //     margin-top: .125rem;
-    // }
-
-    .dropdown-item {
-        border-radius: 0;
-        align-items: center;
-        display: block;
-        font-weight: 400;
-        padding: .25rem;
-    }
-    .active {
-        font-weight: 600;
-        .bi {
-                display: block !important
-            }
-    }
-
-    &::after {
-        display: block;
-        clear: both;
-        content: "";
-    }
-}
-
 .zcu-navbar {
     background-color: var(--zcu-body-bg);
     box-shadow: 0 .125rem .25rem rgba(2, 6, 23, .075);
     padding: .75rem .5rem;
+
     .navbar-brand {
-            padding-bottom: .2rem;
-            padding-top: .2rem
+        padding-bottom: .2rem;
+        padding-top: .2rem;
+
+        img {
+            max-width: 12rem;
         }
-        .navbar-toggler {
-            border: 0;
-            color: var(--zcu-dark);
-            font-size: 1.5rem;
-            // width: 2.25rem;
-            padding: .25rem .5rem;
-            &:focus {
-                    box-shadow: none;
-                    outline: 0
-                }
+    }
+    .navbar-toggler {
+        border: 0;
+        color: var(--zcu-dark);
+        font-size: 1.5rem;
+        padding: .25rem .5rem;
+
+        &:focus {
+            box-shadow: none;
+            outline: 0
         }
+    }
 }
 
-.zcu-navbar .dropdown {
-    position: relative;
-    .dropdown-toggle:after {
-            color: var(--zcu-gray-500);
-            position: absolute;
-            content: "";
-            right: 0.75rem;
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-            background-position: center center;
+#bdNavbar {
+    background-image: url("/content/_common/v3/images/nav-bgm.jpg");
+    background-repeat: repeat;
+    
+        .offcanvas-header {
+            .navbar-brand {
+                img {
+                    filter: brightness(100);
+                }
+            }
+    
+            .btn-close {
+                --zcu-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+            }
+        }
+    
+        .offcanvas-body {
+            background-image: url("/content/_common/v3/images/nav-bg.png");
+            background-size: cover;
             background-repeat: no-repeat;
-            transition: transform 0.2s ease-in-out;
-            background-size: 1rem;
-            height: 1.5rem;
-            width: 1.5rem;
-            border: 0;
-            margin-left: .255em;
-            margin-right: .5rem;
-            vertical-align: .255em;
-            
-            &:hover {
-                    transform: rotate(-180deg);
-                    transition: transform 0.2s ease-in-out;
+            background-position: right top;
+    
+            .navbar-nav {
+                .nav-item {
+                    border-bottom: 1px solid rgba(255, 255, 255, .13);
+    
+                    .nav-link {
+                        --zcu-nav-link-color: #fff;
+                        border-radius: 0;
+                        padding: .75rem 0;
+                        font-size: .875rem;
+                        text-indent: 2em;
+                        &:focus-visible {
+                            box-shadow: none
+                        }
+                        &:hover {
+                            font-weight: 600;
+                            color: var(--zcu-focus-color)
+                        }
+                    }
+
+                    .dropdown-menu {
+                        font-size: .75rem;
+                        border: 0;
+                        border-radius: 0;
+                        z-index: 1021;
+                        background-color: transparent;
+                        box-shadow: none;
+                        min-width: 10rem;
+                        background: rgba(0, 86, 148, .68);
+                        border-top: 1px solid rgba(255, 255, 255, .13);
+                        li {
+                            width: 33.3%;
+                            float: left;
+                            text-align: center;
+                            .dropdown-item {
+                                --zcu-dropdown-link-color: #fff;
+                                border-radius: 0;
+                                display: block;
+                                font-weight: 400;
+                                padding: .25rem;
+                            }
+                        }
+
+                        .active {
+                            font-weight: 600;
+                        }
+
+                        &::after {
+                            display: block;
+                            clear: both;
+                            content: "";
+                        }
+                    }
                 }
+                .dropdown {
+                    position: relative;
+
+                    .dropdown-toggle:focus:not(:focus-visible) {
+                        outline: 0
+                    }
+
+                    .dropdown-toggle:after {
+                        color: #fff;
+                        position: absolute;
+                        content: "";
+                        right: 0.75rem;
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        transition: transform 0.2s ease-in-out;
+                        background-size: 1rem;
+                        height: 1.5rem;
+                        width: 1.5rem;
+                        border: 0;
+                        margin-left: .255em;
+                        margin-right: .5rem;
+                        vertical-align: .255em;
+
+                        &:hover {
+                            transform: rotate(-180deg);
+                            transition: transform 0.2s ease-in-out;
+                        }
+                    }
+
+                    .dropdown-toggle.show::after {
+                        transform: rotate(-180deg);
+                        transition: transform 0.2s ease-in-out;
+                    }
+
+                }
+            }
         }
-        .dropdown-toggle.show::after {
-            transform: rotate(-180deg);
-            transition: transform 0.2s ease-in-out;
-        }
-
-}
-
-.zcu-navbar .navbar-nav .nav-item .nav-link {
-    border-bottom: 1px solid var(--zcu-gray-200);
-    border-radius: 0;
-    padding: .75rem 0;
-    font-size: .875rem;
-}
-
-.zcu-navbar .navbar-nav .nav-item .nav-link:focus-visible {
-    box-shadow: none
-}
-
-.zcu-navbar .navbar-nav .nav-item .nav-link.active,
-.zcu-navbar .navbar-nav .nav-item .nav-link:hover {
-    font-weight: 600;
-    color: var(--zcu-focus-color)
 }
 
 @include media-breakpoint-up(lg) {
-
-    .navbar-brand img {
-        max-width: 20vw;
-    }
-
     .zcu-navbar {
         padding: .5rem;
-        .dropdown-menu {
-            box-shadow: var(--zcu-box-shadow);
-            border-top: 2px solid var(--zcu-brand-color);
-            background: var(--zcu-body-bg);
-            font-size: 1rem;
-            // display: flex;
-            li {
-                border-bottom: 0;
-                width: 100%;
-            }
-
-            li+li {
-                margin-top: .125rem;
-            }
-
-            .dropdown-item {
-                justify-content: center;
+        .navbar-brand {
+            img {
+                max-width: 20vw;
             }
         }
     }
 
-    .zcu-navbar .navbar-nav .dropdown>.dropdown-menu {
-        left: 50%;
-        transform: translate(-50%, 10px);
-    }
+    #bdNavbar {
+        background: transparent;
+        .offcanvas-body {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        --zcu-nav-link-color: var(--zcu-navbar-color);
+                        font-size: 1.5vw;
+                        padding: .5vw .75vw;
+                        border-bottom: 0;
+                        text-indent: 0;
+                    }
+                    
+                }
 
-    .navbar .dropdown .dropdown-toggle:after {
-        display: none;
-    }
+                .dropdown {
+                    .dropdown-menu {
+                        display: block;
+                        left: 50%;
+                        box-shadow: var(--zcu-box-shadow);
+                        border-top: 3px solid var(--zcu-focus-color);
+                        background: var(--zcu-body-bg);
+                        font-size: 1rem;
+                        opacity: 0;
+                        transform: translate(-50%, 10px);
+                        transition: all .3s ease-in-out;
+                        visibility: hidden;
 
-    .navbar .navbar-nav .nav-item .nav-link {
-        font-size: 1.5vw;
-        padding: .5vw .75vw;
-        border-bottom: 0;
+                        li {
+                            border-bottom: 0;
+                            width: 100%;
+                            .dropdown-item {
+                                --zcu-dropdown-link-color: var(--zcu-navbar-color);
+                                &:hover {
+                                    --zcu-dropdown-link-color: var(--zcu-brand-color);
+                                }
+                            }
+                        }
+
+                        li+li {
+                            margin-top: .125rem;
+                        }
+
+                        &.show {
+                            display: none;
+                        }
+                    }
+
+                    &:hover {
+                        .dropdown-menu {
+                            opacity: 1;
+                            visibility: visible
+                        }
+                    }
+
+                    .dropdown-toggle:after {
+                        display: none;
+                        content: '';
+                        margin-left: 0;
+                    }
+                }
+
+            }
+        }
     }
 }
 
 @include media-breakpoint-up(xl) {
-    .navbar-brand img {
-        max-width: 15rem;
+    .zcu-navbar {
+        .navbar-brand {
+            img {
+                max-width: 15rem;
+            }
+        }
     }
-
-    .zcu-navbar .dropdown-menu.show {
-        display: none
-    }
-
-    .zcu-navbar .dropdown-menu {
-        display: block;
-        opacity: 0;
-        transform: translate(-50%);
-        transition: all .3s ease-in-out;
-        visibility: hidden
-    }
-
-    .zcu-navbar .dropdown:hover>.dropdown-menu {
-        opacity: 1;
-        visibility: visible
-    }
-
-    .zcu-navbar .dropdown .dropdown-toggle:after {
-        content: '';
-        margin-left: 0;
+    #bdNavbar {
+        .offcanvas-body {
+            .navbar-nav {
+                .nav-link {
+                    font-size: 1.5vw;
+                    padding: .5vw .75vw;
+                    border-bottom: 0;
+                }
+            }
+        }
     }
 }
 
 @include media-breakpoint-up(xxl) {
-    .navbar .navbar-nav .nav-item .nav-link {
-        font-size: 1.125rem;
-        font-weight: 700;
-        padding: .5rem .875rem;
+    #bdNavbar {
+        .offcanvas-body {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        font-size: 1.125rem;
+                        font-weight: 700;
+                        padding: .5rem .875rem;
+                    }
+                }
+            }
+        }
     }
 }
