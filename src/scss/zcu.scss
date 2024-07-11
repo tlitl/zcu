@@ -599,34 +599,39 @@
     }
     .card {
         background-color: transparent;
-
         color: #fff;
-        .icon {
-            width: 2rem;
-            height: 2rem;
-            // border: 1px solid #ccc;
-            // border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            img {
-                // font-size: 2rem;
-                // color: #0062a9;
+        .card-body {
+            padding-left: 0;
+            padding-right: 0;
+            .icon {
                 width: 2rem;
                 height: 2rem;
+                // border: 1px solid #ccc;
+                // border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        
+                img {
+                    // font-size: 2rem;
+                    // color: #0062a9;
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+            .text {
+                p {
+                    font-weight: 600;
+                    font-size: 0.875rem;
+                    margin-bottom: 0;
+                }
+        
+                h6 {
+                    margin-bottom: 0;
+                }
             }
         }
-        .text {
-            p {
-                font-weight:600;
-                font-size: 0.875rem;
-                margin-bottom: 0;
-            }
 
-            h6 {
-                margin-bottom: 0;
-            }
-        }
     }
 }
 
