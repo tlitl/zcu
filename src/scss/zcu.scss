@@ -940,9 +940,9 @@
         --swiper-pagination-color: var(--zcu-brand-color);
         --swiper-pagination-bullet-inactive-color: var(--zcu-brand-color);
         --swiper-pagination-bullet-inactive-opacity: 0.5;
-        
+        padding-bottom: 10px;
         .swiper-pagination {
-            top: calc(50% + 90px);
+            top: calc(50% + 85px);
             left: 0;
             margin-left: 0;
         }
