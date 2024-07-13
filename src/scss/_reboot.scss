@@ -1,0 +1,17 @@
+// Images
+// Responsive images (ensure images don't scale beyond their parents)
+img,
+figure {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+svg {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+

@@ -8,6 +8,11 @@ import Swiper from 'swiper/bundle';
 // import styles bundle
 import 'swiper/css/bundle';
 
+// import function to register Swiper custom elements
+// import { register } from 'swiper/element/bundle';
+// register Swiper custom elements
+// register();
+
 // import TOC
 import tocbot from 'tocbot';
 // import 'tocbot/src/scss/tocbot.scss';
@@ -447,6 +452,106 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         thumbs: {
             swiper: swiperTeam,
+        },
+    });
+
+    var swiperKP1 = new Swiper("#kp-1", {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            pauseOnMouseEnter: true,
+        },
+        createElements: true,
+        // If we need pagination
+        pagination: {
+            enabled: true,
+            clickable: true,
+        },
+        spaceBetween: 24,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: "#prev1",
+            prevEl: "#next1",
+        },
+    });
+
+    var swiperKP2 = new Swiper("#kp-2", {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            pauseOnMouseEnter: true,
+        },
+        createElements: true,
+        // If we need pagination
+        pagination: {
+            enabled: true,
+            clickable: true,
+        },
+        spaceBetween: 24,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: "#prev2",
+            prevEl: "#next2",
+        },
+    });
+
+    var swiperKP3 = new Swiper("#kp-3", {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            pauseOnMouseEnter: true,
+        },
+        createElements: true,
+        // If we need pagination
+        pagination: {
+            enabled: true,
+            clickable: true,
+        },
+        spaceBetween: 24,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: "#prev3",
+            prevEl: "#next3",
+        },
+    });
+
+    var swiperKP4 = new Swiper("#kp-4", {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            pauseOnMouseEnter: true,
+        },
+        createElements: true,
+        // If we need pagination
+        pagination: {
+            enabled: true,
+            clickable: true,
+        },
+        spaceBetween: 24,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: "#prev4",
+            prevEl: "#next4",
+        },
+    });
+
+    var swiperKP5 = new Swiper("#kp-5", {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            pauseOnMouseEnter: true,
+        },
+        createElements: true,
+        // If we need pagination
+        pagination: {
+            enabled: true,
+            clickable: true,
+        },
+        spaceBetween: 24,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: "#prev5",
+            prevEl: "#next5",
         },
     });
 

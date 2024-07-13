@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- for share to Qzone -->
+    <meta name="site" content="https://www.zcu.edu.cn" />
+    <title>HTML5通用模版</title>
+    <meta name="description" content="这是一套基于bootstrap5.3的通用html模版">
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand-lg zcu-navbar sticky-top">
+
+        <img class="logo4share d-none" src="/content/_common/v3/images/logo-thumb.jpg" alt="用于微信分享等分享渠道的缩略图">
+
+        <nav class="container-xxl flex-wrap flex-lg-nowrap">
+
+            <a class="navbar-brand p-0 me-auto me-lg-2" href="#网站首页地址">
+                <img src="/content/_common/v3/images/logo.png" alt="站点LOGO" />
+            </a>
+
+            <div class="zcu-navbar-toggle d-lg-none">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" aria-label="全部专业">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="d-flex">
+                <button class="navbar-toggler offcanvas-nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-label="网站导航">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="offcanvas offcanvas-end flex-grow-1" id="bdNavbar">
+
+                <div class="offcanvas-header">
+                    <a href="#网站首页地址" class="navbar-brand text-inverse p-0">
+                        <img src="/content/_common/v3/images/logo-w.png" alt="网站LOGO" />
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="关闭"></button>
+                </div>
+
+                <div class="offcanvas-body pt-0 align-items-center">
+                    <ul class="navbar-nav ms-lg-auto me-lg-0 align-items-lg-center navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.zcu.edu.cn" role="button">首页</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/xygk" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">学校概况</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-xxjj">
+                                    <a href="/xygk/xxjj" class="dropdown-item">学校简介</a>
+                                </li>
+                                <li id="li-xxld">
+                                    <a href="/xygk/xxld" class="dropdown-item">学校领导</a>
+                                </li>
+                                <li id="li-jgsz">
+                                    <a href="/xygk/jgsz" class="dropdown-item">机构设置</a>
+                                </li>
+                                <li id="li-whbz">
+                                    <a href="/xygk/whbz" class="dropdown-item">文化标识</a>
+                                </li>
+                                <li id="li-szdw">
+                                    <a href="/xygk/szdw" class="dropdown-item">师资队伍</a>
+                                </li>
+                                <li id="li-jxcg">
+                                    <a href="/xygk/jxcg" class="dropdown-item">教学成果</a>
+                                </li>
+                                <li id="li-xxgk">
+                                    <a href="/xygk/xxgk" class="dropdown-item">信息公开</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/djsz">党建工作</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/xyxw" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">新闻动态</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-xxxw">
+                                    <a href="/xyxw/xxxw" class="dropdown-item">要闻资讯</a>
+                                </li>
+                                <li id="li-mtbd">
+                                    <a href="/xyxw/mtbd" class="dropdown-item">媒体关注</a>
+                                </li>
+                                <li id="li-notice">
+                                    <a href="/xyxw/notice" class="dropdown-item">通知公告</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/xyhj" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">校园环境</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-qjkx">
+                                    <a href="/qjkx" class="dropdown-item">全景看校</a>
+                                </li>
+                                <li id="li-xyfg">
+                                    <a href="/xyhj/xyfg" class="dropdown-item">多彩城院</a>
+                                </li>
+                                <li id="li-yycy">
+                                    <a href="/xyhj/yycy" class="dropdown-item">影音城院</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/xueyuan" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">院系设置</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-dzxxu">
+                                    <a href="/dzxxu" class="dropdown-item">电子信息工程学院</a>
+                                </li>
+                                <li id="li-whjyu">
+                                    <a href="/whjyu" class="dropdown-item">文化教育学院</a>
+                                </li>
+                                <li id="li-jzgcu">
+                                    <a href="/jzgcu" class="dropdown-item">建筑工程学院</a>
+                                </li>
+                                <li id="li-znzzu">
+                                    <a href="/znzzu" class="dropdown-item">智能制造学院</a>
+                                </li>
+                                <li id="li-sxyu">
+                                    <a href="/sxyu" class="dropdown-item">商学院</a>
+                                </li>
+                                <li id="li-clgcu">
+                                    <a href="/clgcu" class="dropdown-item">材料工程学院</a>
+                                </li>
+                                <li id="li-marxu">
+                                    <a href="/marxu" class="dropdown-item">马克思主义学院</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                    
+                            <a class="nav-link dropdown-toggle" href="/jymx" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">青春榜样</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-jyby">
+                                    <a href="/jymx/jyby" class="dropdown-item">就业榜样</a>
+                                </li>
+                                <li id="li-sxmx">
+                                    <a href="/jymx/sxmx" class="dropdown-item">升学明星</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/zsjy" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">招生就业</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-zsxxw">
+                                    <a href="/zsxxw" class="dropdown-item">招生信息网</a>
+                                </li>
+                                <li id="li-jycyxxw">
+                                    <a href="/jycyxxw" class="dropdown-item">就业创业信息网</a>
+                                </li>
+                                <li id="li-zhuanye">
+                                    <a href="/zsjy/zhuanye" class="dropdown-item">招生专业</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/hzjl" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">合作交流</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-xiaoqi">
+                                    <a href="/hzjl/xiaoqi" class="dropdown-item">校企合作</a>
+                                </li>
+                                <li id="li-gjlx">
+                                    <a href="/hzjl/gjlx" class="dropdown-item">国际留学</a>
+                                </li>
+                                <li id="li-gjyx">
+                                    <a href="/hzjl/gjyx" class="dropdown-item">国际研学</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/xywh" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">校园生活</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-xshd">
+                                    <a href="/xywh/xshd" class="dropdown-item">学生社团</a>
+                                </li>
+                                <li id="li-jzlt">
+                                    <a href="/xywh/jzlt" class="dropdown-item">论坛交流</a>
+                                </li>
+                                <li id="li-zygy">
+                                    <a href="/xywh/zygy" class="dropdown-item">志愿公益</a>
+                                </li>
+                                <li id="li-wthd">
+                                    <a href="/xywh/wthd" class="dropdown-item">文体活动</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="position-relative pt-3">
+    
+        <!-- Background -->
+        <div class="position-absolute top-0 start-0 w-100 bg-position-bottom-center bg-size-cover bg-repeat-0"
+            style="background-image: url(/content/_common/v3/images/hero-bg.svg);">
+            <div class="d-lg-none" style="height: 864px;"></div>
+            <div class="d-none d-lg-block" style="height: 672px;"></div>
+        </div>
+    
+        <!-- Content -->
+        <div class="container position-relative z-5">
+            <div class="row">
+                <div class="col-lg-6">
+    
+                    <!-- Breadcrumb -->
+                    <nav class="pt-md-2 pt-lg-3 pb-4 pb-md-5 mb-xl-4" aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item">
+                                <a href="https://www.zcu.edu.cn/" target="_blank" title="郑州城市职业学院">首页</a>
+                            </li>
+                            <li class="breadcrumb-item active">专升本</li>
+                        </ol>
+                    </nav>
+    
+                    <!-- Text -->
+                    <h1 class="pb-2 pb-md-3">2024年专升本成功学子经验分享</h1>
+                    <p class="fs-xl pb-4 mb-1 mb-md-2 mb-lg-3" style="max-width: 526px;">
+                        奋斗有多种“打开方式”，勤奋求学是其中的一种。一批优秀的学长学姐们成功上岸，用努力和汗水书写了一段精彩的奋斗历程，构成了独一无二的青春画卷。
+                    </p>
+                    <p class="fs-xl pb-4 mb-1 mb-md-2 mb-lg-3" style="max-width: 526px;">
+                        最近城院迎来了一波好消息，一大批学子专升本顺利上岸就是其一。央视新闻有这么一句话：愿每个人都能遵循自己的时钟，做不后悔的选择。
+                        下面这些学长学姐在选择专升本的那一刻，时钟已经发生改变，指向前方更远更好的路，今天一起看看他们成功的秘诀是什么。
+                    </p>
+                    
+                    <div class="row row-cols-3 pt-4 pt-md-5 mt-2 mt-xl-4">
+                        <div class="col">
+                            <h3 class="h2 mb-2">18000+</h3>
+                            <p class="mb-0"><strong>在校生</strong></p>
+                        </div>
+                        
+                        <div class="col">
+                            <h3 class="h2 mb-2">40+</h3>
+                            <p class="mb-0"><strong>专业</strong></p>
+                        </div>
+                        <div class="col">
+                            <h3 class="h2 mb-2">100+</h3>
+                            <p class="mb-0"><strong>实验实训室</strong> </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Images -->
+                <div class="col-lg-6 mt-xl-3 pt-5 pt-lg-3">
+                    <div class="row row-cols-2 gx-3 gx-lg-4">
+                        <div class="col pt-lg-4 mt-lg-1">
+                            <img src="/content/_common/v3/images/zt/kp/01.jpg" class="img-fluid rounded-3 mb-3 mb-lg-4" alt="专升本">
+                            <img src="/content/_common/v3/images/zt/kp/02.jpg" class="img-fluid rounded-3" alt="专升本">
+                        </div>
+                        <div class="col">
+                            <img src="/content/_common/v3/images/zt/kp/03.jpg" class="img-fluid rounded-3 mb-3 mb-lg-4" alt="专升本">
+                            <img src="/content/_common/v3/images/zt/kp/04.jpg" class="img-fluid rounded-3" alt="专升本">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mt-4" id="zcu-kp">
+        <div class="row  mb-4 mb-xxl-5">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 overflow-hidden px-md-4">
+                    <span
+                        class="zcu-gradient-bg position-absolute top-0 start-0 w-100 h-100 d-none d-md-block"></span>
+                    <div
+                        class="card-body d-flex flex-column align-items-center justify-content-center position-relative z-2 p-0 pb-2 p-xl-4">
+                        <h2 class="text-center text-md-start">
+                            智能制造学院
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="shadow-sm p-4 p-xxl-5">
+
+                    <div class="d-flex justify-content-between pb-4 mb-2">
+                        <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-quote"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                            </svg>
+                        </span>
+                        <div class="d-flex">
+                            <button type="button" id="prev1" class="btn btn-light btn-sm me-2" aria-label="Previous">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </button>
+                            <button type="button" id="next1" class="btn btn-light btn-sm ms-2" aria-label="Next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Slider -->
+                    <div class="swiper zcu-swiper-kp" id="kp-1">
+                        
+                            <!-- Item -->
+                            <div class="swiper-slide">
+                                
+                                    <blockquote class="p-0 mb-0">
+                                        <p class="fs-lg mb-0">
+                                            <strong>备考一定要有计划，复习才不盲目。</strong>没有计划的复习，就像茫茫大海中没有方向的孤舟，注定会沉没。复习过程中小的计划就是短期安排——你要看完哪些书，做完哪些练习，以及每周每天的生活时间安排。比如起床、早读、上课、午休、复习、睡觉、锻炼时间等等。
+                                        </p>
+                                        <!-- <p class="fs-lg mb-0">
+                                            <strong>备考没有捷径，踏实看书最重要。</strong>不要相信各种经验贴里面说什么“裸考也能上”“一个月复习就考上了”。首先你们的基础不同，其次你们学习能力不同，还有就是不同专业的竞争比是不一样的。裸考上岸和短时间冲刺就考上的真的是极少数案例，不要用仅有一次的升本机会去赌这微乎其微的概率。真正能成功的人屈指可数，大多数人都有前期的知识积累和过人的毅力，请认清自己不是那个天选之子。有时候努力和成功不一定成正比，但是不努力就一定是反比！
+                                        </p> -->
+                                    </blockquote>
+                                    <div class="d-flex align-items-center w-100 pt-4">
+                                        <div class="d-flex align-items-center">
+                                            <img src="/content/_common/v3/images/zt/kp/101.jpg" width="80" class="rounded-3"
+                                                alt="占瑞">
+                                        </div>
+                                        <div class="vr mx-2 mx-xl-3"></div>
+                                        <div>
+                                            <p class="fw-semibold lh-base mb-0">
+                                                占瑞(全省第6名)
+                                            </p>
+                                            <span class="fs-sm text-secondary">
+                                                录取院校
+                                            </span>
+                                            <h4 class="text-muted lh-base mb-0">
+                                                河南科技大学
+                                            </h4>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+
+                            <div class="swiper-slide">
+                            
+                                <blockquote class="p-0 mb-0">
+                                    <p class="fs-lg mb-0">
+                                        <strong>一定要在课堂高效学习，</strong>我们大多数的知识都来自于课堂，所以我们要抓住课堂学习的宝贵时间。抓住课堂就是上课注意力高度集中、细听讲、多思考、勤练习、眼随师动，让自己的思路跟着老师走。同时在课堂上记笔记，让自己在课后更有效率地复习。
+                                    </p>
+                                </blockquote>
+                                <div class="d-flex align-items-center w-100 pt-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="/content/_common/v3/images/zt/kp/102.jpg" width="80" class="rounded-3" alt="常旭豪">
+                                    </div>
+                                    <div class="vr mx-2 mx-xl-3"></div>
+                                    <div>
+                                        <p class="fw-semibold lh-base mb-0">
+                                            常旭豪
+                                        </p>
+                                        <span class="fs-sm text-secondary">
+                                            录取院校
+                                        </span>
+                                        <h4 class="text-muted lh-base mb-0">
+                                            河南科技大学
+                                        </h4>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <div class="swiper-slide">
+                            
+                                <blockquote class="p-0 mb-0">
+                                    <p class="fs-lg mb-0">
+                                        在专升本的备考过程中，要<strong>合理规划时间，</strong>根据自身情况，既要保证学习效率，也要注意<strong>劳逸结合</strong>。练习题是必不可少的，通过做题可以更好的巩固知识点，及时发现问题，也能了解到考试的方向，从而提高自身的理解能力和应试技巧。
+                                    </p>
+                                </blockquote>
+                                <div class="d-flex align-items-center w-100 pt-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="/content/_common/v3/images/zt/kp/103.jpg" width="80" class="rounded-3" alt="李海涛">
+                                    </div>
+                                    <div class="vr mx-2 mx-xl-3"></div>
+                                    <div>
+                                        <p class="fw-semibold lh-base mb-0">
+                                            李海涛
+                                        </p>
+                                        <span class="fs-sm text-secondary">
+                                            录取院校
+                                        </span>
+                                        <h4 class="text-muted lh-base mb-0">
+                                            河南理工大学
+                                        </h4>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row  mb-4 mb-xxl-5">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 overflow-hidden px-md-4">
+                    <span class="zcu-gradient-bg position-absolute top-0 start-0 w-100 h-100 d-none d-md-block"></span>
+                    <div
+                        class="card-body d-flex flex-column align-items-center justify-content-center position-relative z-2 p-0 pb-2 p-xl-4">
+                        <h2 class="text-center text-md-start">
+                            文化教育学院
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-8">
+                <div class="shadow-sm p-4 p-xxl-5">
+        
+                    <div class="d-flex justify-content-between pb-4 mb-2">
+                        <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-quote" viewBox="0 0 16 16">
+                                <path
+                                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                            </svg>
+                        </span>
+                        <div class="d-flex">
+                            <button type="button" id="prev2" class="btn btn-light btn-sm me-2" aria-label="Previous">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </button>
+                            <button type="button" id="next2" class="btn btn-light btn-sm ms-2" aria-label="Next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+        
+                    <!-- Slider -->
+                    <div class="swiper" id="kp-2">
+        
+                        <!-- Item -->
+                        <div class="swiper-slide">
+        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    在备考时，<strong>提高自控能力，</strong>控制自己玩手机的时长，如果没有自控能力的话就把耽误学习时间的软件，比如抖音、王者等删除，一点点来戒掉对手机的依赖，少一些社交，沉下心来好好学习。专升本是我们最后一次上岸的机会，一定让自己做到最好，不给自己留遗憾，上岸成功的心情比你想象的还要开心。
+                                </p>
+                                <!-- <p class="fs-lg mb-0">
+                                                    保持良好的心态和自我调节的能力就是一个很大的优势，要相信自己，一切皆有可能，不断给自己做心理暗示：自己能行，自己就是打不到的小强！鼓励自己再坚持一下，再努力一下，成功就在彼岸。珍惜每次模考的机会，为专升本考试做充分准备，防止你因考试次数少，产生紧张心理，或者利用模考总结自己的弱点进行改正。
+                                                </p> -->
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/104.jpg" width="80" class="rounded-3" alt="谷越">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        谷越
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        郑州师范学院
+                                    </h4>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                        <div class="swiper-slide">
+        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    <strong>心态真的真的很重要！</strong>只要自己努力过，至少不会再为自己当初没有选择专升本而后悔。一定要坚持。自己选择的路，跪着也要走下去。等你回过头想想，其实没什么值得畏惧，唯一需要考虑的是，你配不配得上自己的野心，是否辜负了曾经经历的苦难与艰辛！一定要相信你今天所有的努力、所有的坚持都将是明天的雨后风景。
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/105.jpg" width="80" class="rounded-3" alt="杨舒">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        杨舒
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        洛阳理工学院
+                                    </h4>
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    要有时间意识，<strong>提前计划，制定目标，</strong>并不能觉得离考试时间还早，就不背。我当时是等到第二轮课程开始才开始背，就已经有点晚了，有的人会说时间战线拉的长，后期会没有效率，但是前期不努力后期需要付出加倍的努力，在长跑中，有的人会选择匀速跑，有自己速度，在后期就一直保持这个速度到达终点；有的人会选择前期加速，而后期慢下来到达终点；有的人会选择前期慢慢跑，后期加速等，选择是不同的，我们要找到适合我们的路，从而到达终点。
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/106.jpg" width="80" class="rounded-3" alt="王梦巧">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        王梦巧
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        郑州师范学院
+                                    </h4>
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    在实现目标或者为专升本以及各种考试备考的过程中，<strong>学会调节和放松</strong>。当你感到疲惫或是遇到瓶颈期的时候，可适当的放松一下，合理释放压力。不要去想自己是否可以上岸，只要自己全力以赴，每天坚持学习，休闲时间不要产生担心或愧疚的心理，<strong>在学习的时间好好学习，在空闲时间里调整心理，</strong>我相信你一定可以!
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/107.jpg" width="80" class="rounded-3" alt="赵映">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        赵映
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        新乡学院
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    在开始学习前，先计划今天要学习的内容，要完成的任务，而不是漫无目的地学习；学习的过程中一定要思考，<strong>要学会提问，向知识发问，向作者发问，向自己发问，并去寻找答案；</strong>然后每天睡前复习一遍当天学过的内容，每周进行一次总结和复盘；最后，尽量找机会去检验自己的学习成果，可以通过向别人讲解你所学过的内容，来检查自己的学习效果，如果无法讲解得很清晰，那就再回去多看几遍(来自费曼学习法)。
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/108.jpg" width="80" class="rounded-3" alt="杨子菡">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        杨子菡
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        新乡学院
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    坚持背单词、基础语法。每天坚持背专升本核心单词，可拆分成早上30个、晚上20个；关于语法，一开始按照老师的要求去做，总之先把基础搞好。不断去巩固、背诵所需掌握的知识；每听完一章的课程，需要再次巩固，让自己记得更牢固。重要的一点，<strong>密切关注报考学校的专升本分数线，以及录取信息，</strong>结合自身情况，及时做调整。
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/109.jpg" width="80" class="rounded-3" alt="徐正茹">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        徐正茹
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        新乡学院
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    当你做好了专升本的准备，就要一直往前走，可能有时候会感到迷茫，不知道这条路适不适合自己，请坚持下去，风雨过后就是彩虹。<strong>稳定心态，</strong>保持对学习的积极态度。给自己<strong>规划学习任务</strong>，在课堂上认真听讲，虽然学习有时候会枯燥，但也要学会找到课程中的乐趣。成绩好坏与否不是重点，要知道自己想要什么，当下的生活状态怎么样，才能让自己变得更好，朝这个方向努力前进。
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/110.jpg" width="80" class="rounded-3" alt="安小蹀">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        安小蹀
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        周口师范学院
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row  mb-4 mb-xxl-5">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 overflow-hidden px-md-4">
+                    <span class="zcu-gradient-bg position-absolute top-0 start-0 w-100 h-100 d-none d-md-block"></span>
+                    <div
+                        class="card-body d-flex flex-column align-items-center justify-content-center position-relative z-2 p-0 pb-2 p-xl-4">
+                        <h2 class="text-center text-md-start">
+                            建筑工程学院
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-8">
+                <div class="shadow-sm p-4 p-xxl-5">
+        
+                    <div class="d-flex justify-content-between pb-4 mb-2">
+                        <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-quote" viewBox="0 0 16 16">
+                                <path
+                                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                            </svg>
+                        </span>
+                        <div class="d-flex">
+                            <button type="button" id="prev3" class="btn btn-light btn-sm me-2" aria-label="Previous">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </button>
+                            <button type="button" id="next3" class="btn btn-light btn-sm ms-2" aria-label="Next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+        
+                    <!-- Slider -->
+                    <div class="swiper zcu-swiper-kp" id="kp-3">
+        
+                        <!-- Item -->
+                        <div class="swiper-slide">
+        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg">
+                                    我的经验就是一定要<strong>多背单词，</strong>我背单词是用“不背单词”这个软件背的，手机上背单词的好处就是随时随地可以拿出来背诵复习，基础比较差的选择专升本重点词汇，前期背的越少后期就背的就越多。基础好的要背三千词汇。
+                                </p>
+                                <p class="fs-lg mb-0">
+                                    总而言之，努力奋斗，超越自我，坚持不懈，突破瓶颈，好好学习，天天向上。学就完了！
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/111.jpg" width="80" class="rounded-3" alt="彭红媛">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        彭红媛
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        南阳师范学院
+                                    </h4>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                        <div class="swiper-slide">
+        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    一寸光阴一寸金！前期你也许觉得时间很宽裕，但随着时间流逝，尤其到了年后，你就会发现你起床的时间会越来越早，睡觉的时间是越来越少，所以<strong>一定要利用好时间，前期不可懈怠，后期注重效率，坚持最重要！</strong>有一个合理的复习计划，预则立，不预则废。计划是重中之重，计划不要定时，而要定量，把每天的任务制定好并完成。<!--计划分为总计划、分期计划和每天计划，从开始复习到考试之前，一共有多少时间，每本书要看多少遍，这是总计划；每本书的每一遍花多长时间看完，在什么时间段看完，这是分期计划；每天各科复习参考书要看多少页，这是每天的计划。-->
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/112.jpg" width="80" class="rounded-3" alt="曲梦雪">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        曲梦雪
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        河南城建学院
+                                    </h4>
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    保持积极心态与态度。面对困难，保持乐观，相信自己有能力克服。不要害怕寻求帮助，<strong>与老师、同学多交流，共探讨，同进步</strong>。总之，专升本在“明确目标、选好资料、制定计划、提高效率、注重听讲、定期复习”的基础上，保持积极心态并适当寻求帮助，一定能行！
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/103.jpg" width="80" class="rounded-3" alt="杨立旺">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        杨立旺
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        郑州轻工业大学
+                                    </h4>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row  mb-4 mb-xxl-5">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 overflow-hidden px-md-4">
+                    <span class="zcu-gradient-bg position-absolute top-0 start-0 w-100 h-100 d-none d-md-block"></span>
+                    <div
+                        class="card-body d-flex flex-column align-items-center justify-content-center position-relative z-2 p-0 pb-2 p-xl-4">
+                        <h2 class="text-center text-md-start">
+                            电子信息工程学院
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-8">
+                <div class="shadow-sm p-4 p-xxl-5">
+        
+                    <div class="d-flex justify-content-between pb-4 mb-2">
+                        <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-quote" viewBox="0 0 16 16">
+                                <path
+                                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                            </svg>
+                        </span>
+                        <div class="d-flex">
+                            <button type="button" id="prev4" class="btn btn-light btn-sm me-2" aria-label="Previous">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </button>
+                            <button type="button" id="next4" class="btn btn-light btn-sm ms-2" aria-label="Next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+        
+                    <!-- Slider -->
+                    <div class="swiper zcu-swiper-kp" id="kp-4">
+        
+                        <!-- Item -->
+                        <div class="swiper-slide">
+        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg">
+                                    <strong>合理安排时间，有自己的节奏。</strong>
+                                </p>
+                                <p class="fs-lg mb-0">
+                                    学习是一个循序渐进的过程，制定适合自己的学习节奏和学习方法，切忌三天打鱼两天晒网。作息一定要规律，睡眠时间要充足，每天都要保持最佳的精神状态去学习，确保每天的学习是有成果的。
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/114.jpg" width="80" class="rounded-3" alt="胡鑫龙">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        胡鑫龙
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        河南工程学院
+                                    </h4>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                        <div class="swiper-slide">
+        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    学习英语，<strong>要注重日常积累，善于总结思考</strong>。要有大量的单词储备量，每天不断的背单词。其次是语法的掌握，可以多做完型填空和改错，也可以跟随老师的进度慢慢积累。对于专业课，我学的是高数，高数就是不断的刷题，总结错题。总有一天，成绩会从量变转化成质变。
+                                </p>
+                                <!-- <p>
+                                    专升本是一个坚持的过程，过程可能很难熬，但结果肯定也很美好。专升本考试并没有大家想象的那么难，只要我们付出努力，就一定会有回报！
+                                </p> -->
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/115.jpg" width="80" class="rounded-3" alt="张豪">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        张豪
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        安阳工学院
+                                    </h4>
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    <strong>备考阶段一定不能着急，不能急于求成，</strong>不要看别人考了多少分，别人在学什么，就跟着做。要根据自己的情况，多总结，多复习，多复盘。注意，不要放过任何一个知识点，只要愿意学，肯定能学会。别逃考试！把每次考试都当做大考，查缺补漏，掌握不牢固的加大复习力度，制定适合自己的学习计划和目标。
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/116.jpg" width="80" class="rounded-3" alt="袁丹婷">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        袁丹婷
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        华北水利水电大学
+                                    </h4>
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    <strong>一个好的心态能提供积极的情绪价值。一个强大的内心会稳定我们的情绪，冷静处理很多事情，也能扛住外界压力。</strong><!--接受焦虑，接受自己好的一面，也必须接受自己不好的一面。每天睡觉前闭上眼睛，在脑海中过一遍今天学过的所有知识点，对于卡壳没有掌握的地方及时巩固，然后再过一遍，直到能顺利顺下来。-->专升本备考本身就是一个磨练心智的过程，复习或许会枯燥乏味，但是你要相信你的坚持和努力会回报给你理想的成绩。你会明白付出和努力是成正比的，努力不一定会成功，但放弃一定失败。
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/117.jpg" width="80" class="rounded-3" alt="霍硕硕">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        霍硕硕
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        河南科技大学
+                                    </h4>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="swiper-slide">
+                        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    <strong>不要盲目跟进度，不要照搬别人的学习方法，不要放弃任何一科，不要钻牛角尖，不要拖延，不要抱有侥幸心理，不要放弃；</strong>不能只背新知识，复习很重要！英语每天复习背过的单词，再继续背新的单词。专业课要做好笔记，建立知识框架。<!--别把粗心当成概率事件，做错了就是不会，整理自己的错题本，没事的时候复习一下错题；冲刺阶段，成绩不好一定要多刷真题卷！-->合理规划好自己的时间，养成固定的作息习惯。
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/118.jpg" width="80" class="rounded-3" alt="魏雨乐">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        魏雨乐
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        河南科技大学
+                                    </h4>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row  mb-4 mb-xxl-5">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 px-0 overflow-hidden px-md-4">
+                    <span class="zcu-gradient-bg position-absolute top-0 start-0 w-100 h-100 d-none d-md-block"></span>
+                    <div
+                        class="card-body d-flex flex-column align-items-center justify-content-center position-relative z-2 p-0 pb-2 p-xl-4">
+                        <h2 class="text-center text-md-start">
+                            商学院
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-8">
+                <div class="shadow-sm p-4 p-xxl-5">
+        
+                    <div class="d-flex justify-content-between pb-4 mb-2">
+                        <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-quote" viewBox="0 0 16 16">
+                                <path
+                                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                            </svg>
+                        </span>
+                        <div class="d-flex">
+                            <button type="button" id="prev5" class="btn btn-light btn-sm me-2" aria-label="Previous">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </button>
+                            <button type="button" id="next5" class="btn btn-light btn-sm ms-2" aria-label="Next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+        
+                    <!-- Slider -->
+                    <div class="swiper zcu-swiper-kp" id="kp-5">
+        
+                        <!-- Item -->
+                        <div class="swiper-slide">
+        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    <strong>预谋慎战，早做准备。</strong>选择专升本的时候，要提前了解，自己能够报考的本科专业，选择真的大于努力，切记盲目选择。其次就是学习方面，英语要提前背单词，单词是英语的关键，利用前期课程，尽量过完一本好词。模拟考试的时候，要端正自己的态度，认真对待每一次的考试，总结每次考试的错题，争取下次不犯相同或者类似的错误，成绩将稳步上升。<strong>古之成大事者，未必有超世之才，亦必有坚韧不拔之志。</strong>
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/119.jpg" width="80" class="rounded-3" alt="任治源">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        任治源
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        安阳工学院
+                                    </h4>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                        <div class="swiper-slide">
+        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    在专升本的过程中，<strong>有计划的学习</strong>是最重要的，尝试着从每天的计划开始做，然后做每个星期的计划，每天的计划要根据自己能力范围来规划，不要给自己过多的压力，会适得其反；其次，考上与否，只要自己努力过，至少不会再为自己当初没有选择专升本而后悔，到了学习后期，心态很重要，这个时候心态不好，考试就很有可能前功尽弃。每天激励自己，不要让自己在专升本的考场上后悔。最后，一定要坚持。<strong>从专科到本科的逆袭，注定是一段孤独的时光，如果你享受其中，它会在孤独中绽放美好！</strong>
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/120.jpg" width="80" class="rounded-3" alt="来文霞">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        来文霞
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        河南牧业经济学院
+                                    </h4>
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+        
+                            <blockquote class="p-0 mb-0">
+                                <p class="fs-lg mb-0">
+                                    在备考过程中，<strong>明确自己的目标和动力，</strong>它是对我们获得更高学历的一次机会，将升本科的动力，写在纸上贴在学习的地方，以此提醒自己时刻保持动力。只有对自己的目标有清晰认识，时刻激励自己，才能更加积极地备考。另外，<strong>掌握有效的学习方法</strong>可以提高学习效率，例如：可以采用分块复习法，将学习内容分块，每次只复习一块，可以避免信息过载。也可以采用联想记忆法，将亲新的知识点与已有的知识或生活经验相联系，以便于记忆。
+                                </p>
+                            </blockquote>
+                            <div class="d-flex align-items-center w-100 pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="/content/_common/v3/images/zt/kp/121.jpg" width="80" class="rounded-3" alt="周康辉">
+                                </div>
+                                <div class="vr mx-2 mx-xl-3"></div>
+                                <div>
+                                    <p class="fw-semibold lh-base mb-0">
+                                        周康辉
+                                    </p>
+                                    <span class="fs-sm text-secondary">
+                                        录取院校
+                                    </span>
+                                    <h4 class="text-muted lh-base mb-0">
+                                        河南工程学院
+                                    </h4>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="zcu-footer">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-4 col-lg-3 text-center text-md-start">
+                    <img src="https://www.zcu.edu.cn/content/_common/zcu/images/logo-dark@2x.png" alt="郑州城市职业学院" class="logo img-fluid">
+                </div>
+
+                <div class="col-md-8 col-lg-4 text-center text-md-start">
+
+                    中国 · 河南 · 郑州<br>
+                    电话：0371-69213333 0371-68506666（招生咨询）<br>
+                    邮箱：zzcszyxy618@163.com<br>
+                    版权所有 © 2023 郑州城市职业学院<br>
+
+                    <div class="py-2">
+                        <a href="https://beian.miit.gov.cn/" target="_blank">
+                            豫ICP备12014925号-1
+                        </a> / 
+                        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41018302000187" target="_blank">
+                            豫公网安备 41018302000187号
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 offset-md-4 col-lg-5 offset-lg-0 text-center">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="https://www.zcu.edu.cn/content/_common/v2/images/social/weixin.jpg"  alt="官方微信公众号" class="img-fluid">
+                            <br>
+                            <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA5OTg2OTE1Ng==&amp;action=getalbum&amp;album_id=2393721616590782469&amp;scene=126#wechat_redirect" target="_blank" title="官方微信公众号">官方微信公众号</a>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://www.zcu.edu.cn/content/_common/v2/images/social/weibo.jpg" alt="官方微博" class="img-fluid">
+                            <br>
+                            <a href="https://weibo.com/u/7674037481" target="_blank" title="官方微博">
+                                官方微博
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://www.zcu.edu.cn/content/_common/v2/images/social/douyin.jpg" alt="官方抖音"
+                                class="img-fluid">
+                            <br>
+                            <a href="https://www.douyin.com/user/MS4wLjABAAAA-mZeYz7hw538fARR5-TR4kWrgXUvTimwVBNRwuS56dFTdjo5f9umgGEbrcdeXxud"
+                                target="_blank" title="官方抖音">官方抖音</a>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://www.zcu.edu.cn/content/_common/v3/images/jubao.jpg" class="img-fluid">
+                            <br>
+                            <a href="http://szxingaojiao.com/Z_WX/15_Report/ReportMain.aspx?schoolName=郑州城市职业学院"
+                                title="廉洁举报中心">廉洁举报中心</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll top -->
+    <div class="btn-scroll-top active-progress">
+        <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+            <path
+                d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z">
+            </path>
+        </svg>
+    </div>
+    <div class="modal notification" tabindex="-1" id="upgrade_notice">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title py-0">
+                        浏览器升级提醒
+                    </h5>
+                    <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="关闭"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center mb-0">
+                        为了最好的体验，请升级您的浏览器或停用兼容模式
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="./vendor/headhesive/headhesive.min.js"></script> -->
+    <script type="module" src="../src/js/main.js"></script>
+
+    <!-- <script src="./js/color-mode.js"></script> -->
+    <link rel="stylesheet" href="/vendor/social-share/css/share.min.css">
+    <script src="/vendor/social-share/js/social-share.min.js"></script>
+    <script>
+        // social Share
+        // qrcode待升级(https://github.com/kazuhikoarase/qrcode-generator/tree/master/js)
+        if (null != document.querySelector(".zcu-social-share")) {
+            socialShare('.zcu-social-share', {
+                sites: ['wechat', 'qq', 'weibo', 'qzone',],
+                wechatQrcodeTitle: "微信扫一扫：分享", // 微信二维码提示文字
+                wechatQrcodeHelper: '<p>微信里点“发现”，扫一下</p><p>二维码便可将本文分享至朋友圈。</p>',
+            });
+        }
+    </script>
+
+</body>
+
+</html>
