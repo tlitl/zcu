@@ -477,10 +477,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     var swiperKP2 = new Swiper("#kp-2", {
         loop: true,
-        autoplay: {
-            delay: 3000,
-            pauseOnMouseEnter: true,
-        },
+        // autoplay: {
+        //     delay: 3000,
+        //     pauseOnMouseEnter: true,
+        // },
         createElements: true,
         // If we need pagination
         pagination: {

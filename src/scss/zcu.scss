@@ -28,6 +28,9 @@ a {
     background: linear-gradient(90deg, #19a1c8 0%, #0062a9 50%, #0b318f 100%);
     opacity: .1;
 }
+.zcu-gradient-primary-translucent-bg {
+    background: linear-gradient(180deg, rgba(11, 49, 143, 0) 0%, rgba(0, 98, 169, 0.6) 120%);
+}
 
 // layout
 
@@ -290,6 +293,12 @@ a {
             h2 {
                 font-size: 1.25rem;
             }
+            .swiper-slide {
+                height: auto !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
         }
 }
 @include media-breakpoint-up(xl) {
@@ -300,6 +309,94 @@ a {
     }
 }
 
+.shop-feature {
+    .advantage {
+        .adv-box {
+            height: 100%;
+            background-image: url('/content/_common/v3/images/zt/sy/bg-01.png');
+            background-position: bottom right;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: all .3s ease-out;
+            padding: 1.5rem 1rem 7rem 1rem;
+            
+            ul {
+                list-style: none;
+                padding-left: 0;
+                color: var(--zcu-gray-600);
+                li {
+                    margin-bottom: 0.5rem;
+                }
+            }
+            &:hover {
+                background-image: url('/content/_common/v3/images/zt/sy/bg-hover-01.png');
+                transform: translateY(-10px);
+                h4 {
+                    color: var(--zcu-focus-color);
+                }
+            }
+        }
+        
+    }
+}
+
+.shop-list {
+    .row {
+        box-shadow: var(--zcu-box-shadow-sm);
+    }
+
+    .shop {
+        background-color: var(--zcu-focus-color);
+        position: relative;
+
+        h2 {
+            color: var(--zcu-gray-100);
+        }
+        
+        hr {
+            border-color: var(--zcu-gray-300);
+        }
+
+        p {
+            color: var(--zcu-gray-200);
+        }
+
+        &::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: url('/content/_common/v3/images/zt/sy/shape-m-w.png');
+            background-position: right bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: all 0.3s ease-out;
+        }
+
+        transition: all 0.3s ease-out;
+        &:hover {
+            background-color: rgba(var(--zcu-tertiary-bg-rgb), var(--zcu-bg-opacity)) ;
+
+            h2 {
+                    color: var(--zcu-focus-color);
+                }
+
+            hr {
+                border-color: var(--zcu-gray-500);
+            }
+
+            p {
+                color: var(--zcu-gray-700);
+            }
+        }
+
+        &:hover::before {
+            background-image: url('/content/_common/v3/images/zt/sy/shape-m.png');
+        }
+    }
+}
 // components
 .zcu-search {
     position: relative;

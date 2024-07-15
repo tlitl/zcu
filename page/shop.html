@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- for share to Qzone -->
+    <meta name="site" content="https://www.zcu.edu.cn" />
+    <title>HTML5通用模版</title>
+    <meta name="description" content="这是一套基于bootstrap5.3的通用html模版">
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand-lg zcu-navbar sticky-top">
+
+        <img class="logo4share d-none" src="/content/_common/v3/images/logo-thumb.jpg" alt="用于微信分享等分享渠道的缩略图">
+
+        <nav class="container-xxl flex-wrap flex-lg-nowrap">
+
+            <a class="navbar-brand p-0 me-auto me-lg-2" href="#网站首页地址">
+                <img src="/content/_common/v3/images/logo.png" alt="站点LOGO" />
+            </a>
+
+            <div class="zcu-navbar-toggle d-lg-none">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" aria-label="全部专业">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="d-flex">
+                <button class="navbar-toggler offcanvas-nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-label="网站导航">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="offcanvas offcanvas-end flex-grow-1" id="bdNavbar">
+
+                <div class="offcanvas-header">
+                    <a href="#网站首页地址" class="navbar-brand text-inverse p-0">
+                        <img src="/content/_common/v3/images/logo-w.png" alt="网站LOGO" />
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="关闭"></button>
+                </div>
+
+                <div class="offcanvas-body pt-0 align-items-center">
+                    <ul class="navbar-nav ms-lg-auto me-lg-0 align-items-lg-center navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.zcu.edu.cn" role="button">首页</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/xygk" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">学校概况</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-xxjj">
+                                    <a href="/xygk/xxjj" class="dropdown-item">学校简介</a>
+                                </li>
+                                <li id="li-xxld">
+                                    <a href="/xygk/xxld" class="dropdown-item">学校领导</a>
+                                </li>
+                                <li id="li-jgsz">
+                                    <a href="/xygk/jgsz" class="dropdown-item">机构设置</a>
+                                </li>
+                                <li id="li-whbz">
+                                    <a href="/xygk/whbz" class="dropdown-item">文化标识</a>
+                                </li>
+                                <li id="li-szdw">
+                                    <a href="/xygk/szdw" class="dropdown-item">师资队伍</a>
+                                </li>
+                                <li id="li-jxcg">
+                                    <a href="/xygk/jxcg" class="dropdown-item">教学成果</a>
+                                </li>
+                                <li id="li-xxgk">
+                                    <a href="/xygk/xxgk" class="dropdown-item">信息公开</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/djsz">党建工作</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/xyxw" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">新闻动态</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-xxxw">
+                                    <a href="/xyxw/xxxw" class="dropdown-item">要闻资讯</a>
+                                </li>
+                                <li id="li-mtbd">
+                                    <a href="/xyxw/mtbd" class="dropdown-item">媒体关注</a>
+                                </li>
+                                <li id="li-notice">
+                                    <a href="/xyxw/notice" class="dropdown-item">通知公告</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/xyhj" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">校园环境</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-qjkx">
+                                    <a href="/qjkx" class="dropdown-item">全景看校</a>
+                                </li>
+                                <li id="li-xyfg">
+                                    <a href="/xyhj/xyfg" class="dropdown-item">多彩城院</a>
+                                </li>
+                                <li id="li-yycy">
+                                    <a href="/xyhj/yycy" class="dropdown-item">影音城院</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/xueyuan" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">院系设置</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-dzxxu">
+                                    <a href="/dzxxu" class="dropdown-item">电子信息工程学院</a>
+                                </li>
+                                <li id="li-whjyu">
+                                    <a href="/whjyu" class="dropdown-item">文化教育学院</a>
+                                </li>
+                                <li id="li-jzgcu">
+                                    <a href="/jzgcu" class="dropdown-item">建筑工程学院</a>
+                                </li>
+                                <li id="li-znzzu">
+                                    <a href="/znzzu" class="dropdown-item">智能制造学院</a>
+                                </li>
+                                <li id="li-sxyu">
+                                    <a href="/sxyu" class="dropdown-item">商学院</a>
+                                </li>
+                                <li id="li-clgcu">
+                                    <a href="/clgcu" class="dropdown-item">材料工程学院</a>
+                                </li>
+                                <li id="li-marxu">
+                                    <a href="/marxu" class="dropdown-item">马克思主义学院</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                    
+                            <a class="nav-link dropdown-toggle" href="/jymx" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">青春榜样</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-jyby">
+                                    <a href="/jymx/jyby" class="dropdown-item">就业榜样</a>
+                                </li>
+                                <li id="li-sxmx">
+                                    <a href="/jymx/sxmx" class="dropdown-item">升学明星</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/zsjy" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">招生就业</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-zsxxw">
+                                    <a href="/zsxxw" class="dropdown-item">招生信息网</a>
+                                </li>
+                                <li id="li-jycyxxw">
+                                    <a href="/jycyxxw" class="dropdown-item">就业创业信息网</a>
+                                </li>
+                                <li id="li-zhuanye">
+                                    <a href="/zsjy/zhuanye" class="dropdown-item">招生专业</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/hzjl" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">合作交流</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-xiaoqi">
+                                    <a href="/hzjl/xiaoqi" class="dropdown-item">校企合作</a>
+                                </li>
+                                <li id="li-gjlx">
+                                    <a href="/hzjl/gjlx" class="dropdown-item">国际留学</a>
+                                </li>
+                                <li id="li-gjyx">
+                                    <a href="/hzjl/gjyx" class="dropdown-item">国际研学</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/xywh" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">校园生活</a>
+                            <ul class="dropdown-menu">
+                                <li id="li-xshd">
+                                    <a href="/xywh/xshd" class="dropdown-item">学生社团</a>
+                                </li>
+                                <li id="li-jzlt">
+                                    <a href="/xywh/jzlt" class="dropdown-item">论坛交流</a>
+                                </li>
+                                <li id="li-zygy">
+                                    <a href="/xywh/zygy" class="dropdown-item">志愿公益</a>
+                                </li>
+                                <li id="li-wthd">
+                                    <a href="/xywh/wthd" class="dropdown-item">文体活动</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="zcu-page-banner position-relative">
+
+        <img src="/content/_common/v3/images/zt/sy/banner-1.jpg" alt="" class="position-absolute w-100 h-100 object-fit-cover z-1">
+
+        <span class="zcu-gradient-primary-translucent-bg position-absolute top-0 start-0 w-100 h-100 z-2"></span>
+
+        <div class="container-xxl d-flex flex-column flex-md-column-reverse  position-relative z-3">
+            <div class="row align-items-end">
+                <div class="col-12">
+                    <nav>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="/">
+                                    首页
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="https://www.zcu.edu.cn/zcjy" title="品牌商户">
+                                    品牌商户
+                                </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="mb-2 text-white">综合商业空间</h1>
+                    <p class="zcu-lead text-white mb-3">
+                        为学生提供更好的校园生活体验
+                    </p>
+                    <!--p class="text-white">
+                        坚决杜绝“吃、拿、卡、要”现象，确保商业优质运营，避免恶性竞争；<br>
+                        优质商户可共享省内外8大高校，每年评选优质商户给予额外奖励。
+                    </p-->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <section class="mt-3 pt-md-2 pt-lg-3 pb-3 shop-feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-2 mb-md-3">
+                        我们为合作伙伴提供
+                    </h2>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 advantage">
+                <div class="col">
+                    <div class="adv-box">
+                        <h4>
+                            平台红利
+                        </h4>
+                        <ul>
+                            <li>无中介佣金，收益无上限；</li>
+                            <li>科学规划业态，多维度覆盖人流动线；</li>
+                            <li>全天候16小时营业时间拉动全时段收益；</li>
+                            <li>商业面积灵动可根据需求自由组合。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="adv-box">
+                        <h4>
+                            流量加持
+                        </h4>
+                        <ul>
+                            <li>
+                                在校生18000余人，消费需求旺盛；
+                            </li>
+                            <li>
+                                每年承接社会面考试2万余人次，承接活动4000余人次，带动人流消费；
+                            </li>
+                            <li>
+                                抖音、官微等全媒体宣发，品牌赋能，流量导入；
+                            </li>
+                            <li>
+                                定期举办线上线下活动，转化消费。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="adv-box">
+                        <h4>
+                            便利环境
+                        </h4>
+                        <ul>
+                            <li>
+                                花园式校园，环境优雅；
+                            </li>
+                            <li>
+                                校园内兼具自然人文景观与学术氛围；
+                            </li>
+                            <li>
+                                多元业态营商环境绝佳；
+                            </li>
+                            <li>
+                                车位合理规划，运输便捷停车不用愁。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="adv-box">
+                        <h4>
+                            成熟商机
+                        </h4>
+                        <ul>
+                            <li>
+                                成熟商业氛围，无养铺周期，快速运营；
+                            </li>
+                            <li>
+                                学校统一进行消防验收，简化业户报批流程；
+                            </li>
+                            <li>
+                                “省级安全校园”硬件齐全，24小时无死角监控；
+                            </li>
+                            <li>
+                                勤工助学学子多，减少人工运营成本。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pt-1 pt-sm-2 pt-md-3 pt-lg-4 pt-xl-3 mt-xxl-4 shop-list">
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-stretch g-0  mb-2 mb-lg-4 mb-xl-5">
+            <!-- Video -->
+            <div class="col">
+                <video class="w-100 h-100" poster="/content/_common/v3/images/zt/sy/01.jpg" preload="auto" controls="">
+                    <source src="/content/_common/v3/images/zt/sy/02.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Shop details -->
+            <div class="col shop py-lg-3py-xl-4 py-xxl-5 px-4 px-xl-5">
+                <div class="py-4 py-lg-5 px-md-4 px-lg-5">
+                    <h2>
+                        瑞幸咖啡
+                    </h2>
+                    <hr>
+                    <p>
+                        瑞门永存！周末喝咖啡，快乐到起飞～
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-stretch g-0 mb-2 mb-lg-4 mb-xl-5">
+            <!-- Video -->
+            <div class="col order-md-1">
+                <video class="w-100 h-100" poster="/content/_common/v3/images/zt/sy/02.jpg" preload="auto" controls="">
+                    <source src="/content/_common/v3/images/zt/sy/01.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Shop details -->
+            <div class="col shop py-lg-3py-xl-4 py-xxl-5 px-4 px-xl-5">
+                <div class="py-4 py-lg-5 px-md-4 px-lg-5">
+                    <h2>
+                        欧趣便利店
+                    </h2>
+                    <hr>
+                    <p>
+                        郑州城市职业学院宝藏便利店，便利生活，触手可及！
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-stretch g-0 mb-2 mb-lg-4 mb-xl-5">
+            <!-- Video -->
+            <div class="col">
+                <video class="w-100 h-100" poster="/content/_common/v3/images/zt/sy/03.jpg" preload="auto" controls="">
+                    <source src="/content/_common/v3/images/zt/sy/03.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Shop details -->
+            <div class="col shop py-lg-3 py-xl-4 py-xxl-5">
+                <div class="py-4 py-lg-5 px-4 px-lg-5">
+                    <h2>
+                        塔斯汀
+                    </h2>
+                    <hr>
+                    <p>
+                        火爆全国的中国汉堡塔斯汀！入驻郑州城市职业学院啦~汉堡可乐相伴，轻松快乐加倍！还不快冲！
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-stretch g-0 mb-2 mb-lg-4 mb-xl-5">
+            <!-- Video -->
+            <div class="col order-md-1">
+                <video class="w-100 h-100" poster="/content/_common/v3/images/zt/sy/04.jpg" preload="auto" controls="">
+                    <source src="/content/_common/v3/images/zt/sy/04.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Shop details -->
+            <div class="col shop py-lg-3py-xl-4 py-xxl-5 px-4 px-xl-5">
+                <div class="py-4 py-lg-5 px-md-4 px-lg-5">
+                    <h2>
+                        新疆炒米粉
+                    </h2>
+                    <hr>
+                    <p>
+                        纠结午饭吃什么？品味城院，从一碗热乎乎香喷喷的新疆炒米粉开始～快约上你的饭搭子，开饭啦
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-stretch g-0 mb-2 mb-lg-4 mb-xl-5">
+            <!-- Video -->
+            <div class="col">
+                <video class="w-100 h-100" poster="/content/_common/v3/images/zt/sy/05.jpg" preload="auto" controls="">
+                    <source src="/content/_common/v3/images/zt/sy/05.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Shop details -->
+            <div class="col shop py-lg-3py-xl-4 py-xxl-5 px-4 px-xl-5">
+                <div class="py-4 py-lg-5 px-md-4 px-lg-5">
+                    <h2>
+                        校堡王
+                    </h2>
+                    <hr>
+                    <p>
+                        来自城院的美味——校堡王！一口吃不掉的快乐，“堡”准美味，“堡”你嗨翻味蕾！
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-stretch g-0 mb-2 mb-lg-4 mb-xl-5">
+            <!-- Video -->
+            <div class="col order-md-1">
+                <video class="w-100 h-100" poster="/content/_common/v3/images/zt/sy/06.jpg" preload="auto" controls="">
+                    <source src="/content/_common/v3/images/zt/sy/06.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Shop details -->
+            <div class="col shop py-lg-3py-xl-4 py-xxl-5 px-4 px-xl-5">
+                <div class="py-4 py-lg-5 px-md-4 px-lg-5">
+                    <h2>
+                        煮个串串
+                    </h2>
+                    <hr>
+                    <p>
+                        校园生活，美好“食”光串起来！学习之余来串烤串，放松心情，享受美味！
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-stretch g-0 mb-2 mb-lg-4 mb-xl-5">
+            <!-- Video -->
+            <div class="col">
+                <video class="w-100 h-100" poster="/content/_common/v3/images/zt/sy/07.jpg" preload="auto" controls="">
+                    <source src="/content/_common/v3/images/zt/sy/07.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Shop details -->
+            <div class="col shop py-lg-3py-xl-4 py-xxl-5 px-4 px-xl-5">
+                <div class="py-4 py-lg-5 px-md-4 px-lg-5">
+                    <h2>
+                        霍斯汉堡
+                    </h2>
+                    <hr>
+                    <p>
+                        吃“堡”喝足，烦恼全无！今天尝尝城院的霍斯汉堡～怎么样，你吃“堡”了吗？
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--powerfull work-->
+    <section class="container mb-lg-3">
+        <div class="row g-0">
+            <div class="col-12">
+                <div class="bg-light">
+                    <div class="row align-items-center">
+                        <div class="offset-xl-1 col-xl-4 col-lg-12">
+                            <div class="d-flex flex-column gap-4 p-6 p-xl-0">
+                                <div>
+                                    <h2>
+                                        欢迎符合条件的合作商共同为学生提供更好的校园生活体验
+                                    </h2>
+                                    <p class="mb-0 me-lg-8">
+                                        如您要洽谈合作事宜，请联系资产经营处赵老师
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn btn-primary">
+                                        电话：13683836610
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offset-xl-1 col-xl-5 col-lg-12">
+                            <div class="pt-xl-5 d-none d-xl-block">
+                                <img src="/content/_common/v3/images/zt/sy/banner.jpg" class="img-fluid" alt="综合商业区" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="zcu-footer">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-4 col-lg-3 text-center text-md-start">
+                    <img src="https://www.zcu.edu.cn/content/_common/zcu/images/logo-dark@2x.png" alt="郑州城市职业学院" class="logo img-fluid">
+                </div>
+
+                <div class="col-md-8 col-lg-4 text-center text-md-start">
+
+                    中国 · 河南 · 郑州<br>
+                    电话：0371-69213333 0371-68506666（招生咨询）<br>
+                    邮箱：zzcszyxy618@163.com<br>
+                    版权所有 © 2023 郑州城市职业学院<br>
+
+                    <div class="py-2">
+                        <a href="https://beian.miit.gov.cn/" target="_blank">
+                            豫ICP备12014925号-1
+                        </a> / 
+                        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41018302000187" target="_blank">
+                            豫公网安备 41018302000187号
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 offset-md-4 col-lg-5 offset-lg-0 text-center">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="https://www.zcu.edu.cn/content/_common/v2/images/social/weixin.jpg"  alt="官方微信公众号" class="img-fluid">
+                            <br>
+                            <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA5OTg2OTE1Ng==&amp;action=getalbum&amp;album_id=2393721616590782469&amp;scene=126#wechat_redirect" target="_blank" title="官方微信公众号">官方微信公众号</a>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://www.zcu.edu.cn/content/_common/v2/images/social/weibo.jpg" alt="官方微博" class="img-fluid">
+                            <br>
+                            <a href="https://weibo.com/u/7674037481" target="_blank" title="官方微博">
+                                官方微博
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://www.zcu.edu.cn/content/_common/v2/images/social/douyin.jpg" alt="官方抖音"
+                                class="img-fluid">
+                            <br>
+                            <a href="https://www.douyin.com/user/MS4wLjABAAAA-mZeYz7hw538fARR5-TR4kWrgXUvTimwVBNRwuS56dFTdjo5f9umgGEbrcdeXxud"
+                                target="_blank" title="官方抖音">官方抖音</a>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://www.zcu.edu.cn/content/_common/v3/images/jubao.jpg" class="img-fluid">
+                            <br>
+                            <a href="http://szxingaojiao.com/Z_WX/15_Report/ReportMain.aspx?schoolName=郑州城市职业学院"
+                                title="廉洁举报中心">廉洁举报中心</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll top -->
+    <div class="btn-scroll-top active-progress">
+        <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+            <path
+                d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z">
+            </path>
+        </svg>
+    </div>
+    <div class="modal notification" tabindex="-1" id="upgrade_notice">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title py-0">
+                        浏览器升级提醒
+                    </h5>
+                    <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="关闭"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center mb-0">
+                        为了最好的体验，请升级您的浏览器或停用兼容模式
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="./vendor/headhesive/headhesive.min.js"></script> -->
+    <script type="module" src="../src/js/main.js"></script>
+    <!-- <script src="./js/color-mode.js"></script> -->
+    <link rel="stylesheet" href="/vendor/social-share/css/share.min.css">
+    <script src="/vendor/social-share/js/social-share.min.js"></script>
+    <script>
+        // social Share
+        // qrcode待升级(https://github.com/kazuhikoarase/qrcode-generator/tree/master/js)
+        if (null != document.querySelector(".zcu-social-share")) {
+            socialShare('.zcu-social-share', {
+                sites: ['wechat', 'qq', 'weibo', 'qzone',],
+                wechatQrcodeTitle: "微信扫一扫：分享", // 微信二维码提示文字
+                wechatQrcodeHelper: '<p>微信里点“发现”，扫一下</p><p>二维码便可将本文分享至朋友圈。</p>',
+            });
+        }
+    </script>
+
+</body>
+
+</html>
