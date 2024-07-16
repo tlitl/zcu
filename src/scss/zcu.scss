@@ -290,6 +290,13 @@ a {
 }
 @include media-breakpoint-up(md){
     #zcu-kp {
+            .col-md-8 {
+                background-image: url('/content/_common/v3/images/zt/sy/shape-m.png');
+                background-size: contain;
+                background-position: bottom right;
+                background-repeat: no-repeat;
+            }
+
             h2 {
                 font-size: 1.25rem;
             }
@@ -1061,7 +1068,7 @@ a {
     }
 }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(md) {
 .zcu-swiper-teacher {
         --swiper-navigation-size: 24px;
         // --swiper-pagination-top: -80px;
