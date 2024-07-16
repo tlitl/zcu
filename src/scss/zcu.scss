@@ -404,6 +404,63 @@ a {
         }
     }
 }
+
+.jy-data {
+    
+    .bi {
+        width: 48px !important;
+        height: 48px !important;
+        margin-bottom: 0.75rem;
+        color: var(--zcu-gray-400);
+    }
+    .card {
+        transition: all 0.3s ease-out;
+    }
+    .card:hover {
+        background: var(--zcu-gray-100);
+        .bi {
+            color: rgba(var(--zcu-focus-color-rgb),.5);
+        }
+        // .bi-graph-up-arrow {
+        //     color: var(--zcu-gray-400);
+        // }
+    
+        // .bi-buildings {
+        //     color: var(--zcu-gray-400);
+        // }
+    
+        // .bi-people {
+        //     color: var(--zcu-gray-400);
+        // }
+    }
+}
+
+.jy-feauture {
+    .card {
+        border-radius: 0;
+        transition: all 0.3s ease-out;
+        .card-img-top {
+            border-radius: 0;
+        }
+        
+        p {
+            font-size: 0.875rem;
+        }
+
+        &:hover {
+            background-color: var(--zcu-gray-100);
+            transform: translateY(-.5rem);
+            h3 {
+                color: var(--zcu-focus-color);
+            }
+            p {
+                color: var(--zcu-gray-600);
+            }
+        }
+    }
+
+}
+
 // components
 .zcu-search {
     position: relative;
@@ -1349,6 +1406,18 @@ a {
 
 .zcu-swiper-logo {
     height: 150px;
+    padding-bottom: 20px;
+
+    --swiper-navigation-size: 24px;
+    --swiper-pagination-bottom: 0;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background: rgba(255, 255, 255, .25);
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
+    }
 
     .swiper-slide {
         text-align: center;
@@ -1361,17 +1430,108 @@ a {
         align-items: center;
 
         img {
-            width: 100%;
+            width: calc(100% - var(--zcu-border-width)*2);
+            height: calc( 100% - var(--zcu-border-width)*2);
             border: var(--zcu-border-color) var(--zcu-border-width) var(--zcu-border-style);
             box-shadow: var(--zcu-box-shadow-sm);
         }
 
         &:hover {
             img {
-                border-color: transparent;
+                border-color: rgba(var(--zcu-focus-color-rgb),.5);
                 box-shadow: var(--zcu-box-shadow);
             }
         }
+    }
+}
+
+.zcu-swiper-jy {
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+    --swiper-navigation-size: 24px;
+    --swiper-pagination-bottom: 0;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background: rgba(255, 255, 255, .25);
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
+        margin-top: -22px;
+        opacity: 1;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        background: #fff;
+        height: 100%;
+
+        .card {
+            background: var(--zcu-gray-100);
+            border-radius: 0;
+            transition: all 0.3s ease-out;
+            .card-img-top {
+                border-radius: 0;
+            }
+
+            .badge {
+                left: 10px;
+                top: 10px;
+            }
+            p {
+                max-width: 100%;
+                display: inline-block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            &:hover {
+                box-shadow: var(--zcu-box-shadow);
+                transform: translateY(-0.5rem);
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .zcu-swiper-jy {
+            height: 760px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            --swiper-navigation-size: 24px;
+    
+            .swiper-button-prev,
+            .swiper-button-next {
+                background: rgba(255, 255, 255, .25);
+                border-radius: 5px;
+                width: 40px;
+                height: 40px;
+                margin-top: -22px;
+                opacity: 0;
+            }
+    }
+}
+.zcu-swiper-sx {
+    --swiper-navigation-size: 24px;
+    --swiper-pagination-bottom: 0;
+
+    padding-bottom: 20px;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background: rgba(255, 255, 255, .25);
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
+        margin-top: -22px;
+        opacity: 1;
+    }
+
+    .swiper-slide {
+        width: 480px;
     }
 }
 

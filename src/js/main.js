@@ -332,18 +332,130 @@ document.addEventListener("DOMContentLoaded", () => {
         // autoHeight: true,
 
         autoplay: {
-            delay: 5000,
+            delay: 3000,
             pauseOnMouseEnter: true,
         },
-
-        slidesPerView: 12,
+        slidesPerView: 4,
         grid: {
             rows: 2,
         },
+        spaceBetween: 10,
+        breakpoints: {
+            576: {
+                slidesPerView: 5,
+                grid: {
+                    rows: 2,
+                },
+                spaceBetween: 10,
+            },
+            1024: {
+                slidesPerView: 6,
+                grid: {
+                    rows: 2,
+                },
+                spaceBetween: 10,
+            },
+            1400: {
+                slidesPerView: 7,
+                grid: {
+                    rows: 2,
+                },
+                spaceBetween: 10,
+            }
+        },
+        // createElements: true,
+        // direction: 'vertical',
+        loop: true,
+        grabCursor: true,
+        createElements: true,
+        // Navigation arrows
+        navigation: false,
+        // If we need pagination
+        pagination: {
+            enabled: true,
+            clickable: true,
+        },
+        // And if we need scrollbar
+        // scrollbar: true,
+        // slidesPerView: 2,
+        // spaceBetween: 10,
 
+    });
+    const swiperJob = new Swiper('.zcu-swiper-jy', {
 
-        spaceBetween: 20,
+        // autoHeight: true,
 
+        autoplay: {
+            delay: 3000,
+            pauseOnMouseEnter: true,
+        },
+        slidesPerView: 1,
+        grid: {
+            rows: 1,
+        },
+        spaceBetween: 10,
+        breakpoints: {
+            576: {
+                slidesPerView: 3,
+                grid: {
+                    rows: 1,
+                },
+                spaceBetween: 10,
+            },
+            992: {
+                slidesPerView: 4,
+                grid: {
+                    rows: 2,
+                },
+                spaceBetween: 15,
+            },
+            1200: {
+                slidesPerView: 5,
+                grid: {
+                    rows: 2,
+                },
+                spaceBetween: 20,
+            }
+        },
+        // createElements: true,
+        // direction: 'vertical',
+        loop: true,
+        grabCursor: true,
+        createElements: true,
+        // Navigation arrows
+        navigation: true,
+        // If we need pagination
+        pagination: {
+            enabled: true,
+            clickable: true,
+        },
+        // And if we need scrollbar
+        // scrollbar: true,
+        // slidesPerView: 2,
+        // spaceBetween: 10,
+
+    });
+
+    const swiperSx = new Swiper('.zcu-swiper-sx', {
+
+        // autoHeight: true,
+
+        // autoplay: {
+        //     delay: 3000,
+        //     pauseOnMouseEnter: true,
+        // },
+
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
         // breakpoints: {
         //     640: {
         //         slidesPerView: 2,
@@ -362,10 +474,8 @@ document.addEventListener("DOMContentLoaded", () => {
         //         spaceBetween: 0,
         //     }
         // },
-        // createElements: true,
         // direction: 'vertical',
         loop: true,
-        grabCursor: true,
         createElements: true,
         // Navigation arrows
         navigation: true,
@@ -376,9 +486,6 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         // And if we need scrollbar
         // scrollbar: true,
-        // slidesPerView: 2,
-        // spaceBetween: 10,
-
     });
 
     var swiperTeam = new Swiper(".zcu-swiper-team", {
