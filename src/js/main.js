@@ -440,10 +440,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // autoHeight: true,
 
-        // autoplay: {
-        //     delay: 3000,
-        //     pauseOnMouseEnter: true,
-        // },
+        autoplay: {
+            delay: 3000,
+            pauseOnMouseEnter: true,
+        },
 
         effect: 'coverflow',
         grabCursor: true,
