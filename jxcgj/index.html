@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- for share to Qzone -->
+    <meta name="site" content="https://www.zcu.edu.cn" />
+    <title>HTML5通用模版</title>
+    <meta name="description" content="这是一套基于bootstrap5.3的通用html模版">
+</head>
+
+<body>
+
+    <header class="sticky-top">
+
+        <img class="logo4share d-none" src="/content/_common/v3/images/logo-thumb.jpg" alt="用于微信分享等分享渠道的缩略图">
+        <div class="zcu-navbar">
+            <div class="container-xxl d-flex flex-nowrap justify-content-between align-items-center">
+                
+                    <a class="navbar-brand p-0 me-auto me-lg-2" href="#网站首页地址">
+                        <img src="/content/_common/v3/images/logo.png" alt="站点LOGO" />
+                    </a>
+
+                    <span class="d-none d-lg-block">
+                        本体论影视教育理念下以视听语言为中心的纪实影像人才培养模式的构建与实践
+                    </span>
+                    
+                    <div class="zcu-search">
+                        <div class="search-wrapper">
+                            <div class="search-input-container">
+                                <img class="search-logo" src="/content/_common/v3/images/icon/icon-input.svg" alt="搜索图标">
+                                <input id="zcuKeyword" class="search-input" placeholder="搜索">
+                                <img class="search-clear" src="/content/_common/v3/images/icon/icon-clear.svg" alt="搜索清除图标">
+                            </div>
+                            <div class="search-btn disabled">查找专业</div>
+                        </div>
+                        <ul class="search-result"></ul>
+                    </div>
+
+                    <button class="navbar-toggler offcanvas-nav-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar"
+                        aria-label="网站导航">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                            </path>
+                        </svg>
+                    </button>
+                
+            </div>
+        </div>
+
+        <div class="navbar navbar-expand-lg zcu-navbar">
+            <nav class="container-xxl">
+                <div class="offcanvas offcanvas-end flex-grow-1" id="bdNavbar">
+            
+                    <div class="offcanvas-header">
+                        <a href="#网站首页地址" class="navbar-brand text-inverse p-0">
+                            <img src="/content/_common/v3/images/logo-w.png" alt="网站LOGO" />
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="关闭"></button>
+                    </div>
+            
+                    <div class="offcanvas-body pt-0 align-items-center">
+                        <ul class="navbar-nav align-items-lg-center justify-content-between navbar-nav-scroll">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.zcu.edu.cn" role="button">首页</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/xygk" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">学校概况</a>
+                                <ul class="dropdown-menu">
+                                    <li id="li-xxjj">
+                                        <a href="/xygk/xxjj" class="dropdown-item">学校简介</a>
+                                    </li>
+                                    <li id="li-xxld">
+                                        <a href="/xygk/xxld" class="dropdown-item">学校领导</a>
+                                    </li>
+                                    <li id="li-jgsz">
+                                        <a href="/xygk/jgsz" class="dropdown-item">机构设置</a>
+                                    </li>
+                                    <li id="li-whbz">
+                                        <a href="/xygk/whbz" class="dropdown-item">文化标识</a>
+                                    </li>
+                                    <li id="li-szdw">
+                                        <a href="/xygk/szdw" class="dropdown-item">师资队伍</a>
+                                    </li>
+                                    <li id="li-jxcg">
+                                        <a href="/xygk/jxcg" class="dropdown-item">教学成果</a>
+                                    </li>
+                                    <li id="li-xxgk">
+                                        <a href="/xygk/xxgk" class="dropdown-item">信息公开</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/djsz">党建工作</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/xyxw" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">新闻动态</a>
+                                <ul class="dropdown-menu">
+                                    <li id="li-xxxw">
+                                        <a href="/xyxw/xxxw" class="dropdown-item">要闻资讯</a>
+                                    </li>
+                                    <li id="li-mtbd">
+                                        <a href="/xyxw/mtbd" class="dropdown-item">媒体关注</a>
+                                    </li>
+                                    <li id="li-notice">
+                                        <a href="/xyxw/notice" class="dropdown-item">通知公告</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/xyhj" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">校园环境</a>
+                                <ul class="dropdown-menu">
+                                    <li id="li-qjkx">
+                                        <a href="/qjkx" class="dropdown-item">全景看校</a>
+                                    </li>
+                                    <li id="li-xyfg">
+                                        <a href="/xyhj/xyfg" class="dropdown-item">多彩城院</a>
+                                    </li>
+                                    <li id="li-yycy">
+                                        <a href="/xyhj/yycy" class="dropdown-item">影音城院</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/xueyuan" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">院系设置</a>
+                                <ul class="dropdown-menu">
+                                    <li id="li-dzxxu">
+                                        <a href="/dzxxu" class="dropdown-item">电子信息工程学院</a>
+                                    </li>
+                                    <li id="li-whjyu">
+                                        <a href="/whjyu" class="dropdown-item">文化教育学院</a>
+                                    </li>
+                                    <li id="li-jzgcu">
+                                        <a href="/jzgcu" class="dropdown-item">建筑工程学院</a>
+                                    </li>
+                                    <li id="li-znzzu">
+                                        <a href="/znzzu" class="dropdown-item">智能制造学院</a>
+                                    </li>
+                                    <li id="li-sxyu">
+                                        <a href="/sxyu" class="dropdown-item">商学院</a>
+                                    </li>
+                                    <li id="li-clgcu">
+                                        <a href="/clgcu" class="dropdown-item">材料工程学院</a>
+                                    </li>
+                                    <li id="li-marxu">
+                                        <a href="/marxu" class="dropdown-item">马克思主义学院</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+            
+                                <a class="nav-link dropdown-toggle" href="/jymx" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">青春榜样</a>
+                                <ul class="dropdown-menu">
+                                    <li id="li-jyby">
+                                        <a href="/jymx/jyby" class="dropdown-item">就业榜样</a>
+                                    </li>
+                                    <li id="li-sxmx">
+                                        <a href="/jymx/sxmx" class="dropdown-item">升学明星</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/zsjy" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">招生就业</a>
+                                <ul class="dropdown-menu">
+                                    <li id="li-zsxxw">
+                                        <a href="/zsxxw" class="dropdown-item">招生信息网</a>
+                                    </li>
+                                    <li id="li-jycyxxw">
+                                        <a href="/jycyxxw" class="dropdown-item">就业创业信息网</a>
+                                    </li>
+                                    <li id="li-zhuanye">
+                                        <a href="/zsjy/zhuanye" class="dropdown-item">招生专业</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/hzjl" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">合作交流</a>
+                                <ul class="dropdown-menu">
+                                    <li id="li-xiaoqi">
+                                        <a href="/hzjl/xiaoqi" class="dropdown-item">校企合作</a>
+                                    </li>
+                                    <li id="li-gjlx">
+                                        <a href="/hzjl/gjlx" class="dropdown-item">国际留学</a>
+                                    </li>
+                                    <li id="li-gjyx">
+                                        <a href="/hzjl/gjyx" class="dropdown-item">国际研学</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/xywh" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">校园生活</a>
+                                <ul class="dropdown-menu">
+                                    <li id="li-xshd">
+                                        <a href="/xywh/xshd" class="dropdown-item">学生社团</a>
+                                    </li>
+                                    <li id="li-jzlt">
+                                        <a href="/xywh/jzlt" class="dropdown-item">论坛交流</a>
+                                    </li>
+                                    <li id="li-zygy">
+                                        <a href="/xywh/zygy" class="dropdown-item">志愿公益</a>
+                                    </li>
+                                    <li id="li-wthd">
+                                        <a href="/xywh/wthd" class="dropdown-item">文体活动</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+
+    <div class="zcu-page-banner position-relative">
+
+        <img src="/content/_common/v3/images/parallax-bg-lib.jpg" alt=""
+            class="position-absolute w-100 h-100 object-fit-cover z-1">
+
+        <span class="zcu-gradient-bg position-absolute top-0 start-0 w-100 h-100 opacity-50 z-2"></span>
+
+        <div class="container-xxl d-flex flex-column flex-md-column-reverse position-relative z-3">
+            <div class="row align-items-end">
+                <div class="col-12">
+                    <nav>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="/">
+                                    首页
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="/zsjy" title="招生就业">
+                                    招生就业
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="/zsjy/zhuanye" title="招生专业">
+                                    招生专业
+                                </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-8 col-xl-9">
+                    <h1 class="zcu-title text-white mt-4 mb-3">
+                        招生专业
+                    </h1>
+                    <p class="zcu-lead text-white">
+                        让每一位学生获得职业成就和人生幸福！
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 col-xl-3">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl zcu-gutter mt-3 my-md-4 zcu-layout">
+        <!--内容区域开始-->
+        <aside class="zcu-toc">
+            <div class="offcanvas-lg offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" id="zcuCategory"
+                aria-labelledby="zcuCategoryOffcanvasLabel">
+                <div class="offcanvas-header border-bottom">
+                    <h2 class="offcanvas-title">栏目导航</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                        data-bs-target="#zcuCategory"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <nav class="zcu-category">
+                        <ul class="toc-list">
+                            <li class="toc-list-item is-active-li">
+                                <a href="/xywh/xshd" class="toc-link is-active-link">
+                                    学生社团
+                                </a>
+                            </li>
+                            <li class="toc-list-item">
+                                <a href="/xywh/jzlt" class="toc-link">
+                                    论坛交流
+                                </a>
+                            </li>
+                            <li class="toc-list-item">
+                                <a href="/xywh/zygy" class="toc-link">
+                                    志愿公益
+                                </a>
+                            </li>
+                            <li class="toc-list-item">
+                                <a href="/xywh/wthd" class="toc-link">
+                                    文体活动
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+
+        <main class="zcu-main posts" id="posts">
+            <article class="card mb-4">
+                <div class="row g-0">
+                    <div class="col-12 col-md-4 post-thumb">
+                        <span class="badge">校企合作</span>
+                        <img src="https://www.zcu.edu.cn/upload/main/contentmanage/article/image/2024/06/30/76002a9b79664d3fbe840193db55250a_600_400.jpeg"
+                            alt="...">
+                    </div>
+                    <div class="col-12 col-md-8 card-body">
+
+                        <h3 class="card-title">
+                            郑州城市职业学院“联姻”蒙牛，共育未来人才
+                        </h3>
+                        <p class="card-text">
+                            6月24日下午，郑州城市职业学院联合河南日报、顶端新闻发起的“河南校企融合新质发展行动”推动下，郑州城市职业学院代表团走进蒙牛河南公司，双方就探索校企合作新模式，培养高素质应用型人才进行了深入交流。
+                            1初步达成“蒙牛班”培训计划
+                            座谈会在蒙牛河南公司举行。蒙...
+                        </p>
+                        <p class="date">
+                            2024/06/30
+                        </p>
+
+                    </div>
+                </div>
+                <a href="#111" class="stretched-link"></a>
+            </article>
+            <article class="card mb-4">
+                <div class="row g-0">
+                    <div class="col-12 col-md-4 post-thumb">
+                        <span class="badge">校企合作</span>
+                        <img src="https://www.zcu.edu.cn/upload/main/contentmanage/article/image/2024/06/13/97aa02275256454c8ba4c9d1966e6e11_600_340.jpg"
+                            alt="...">
+                    </div>
+                    <div class="col-12 col-md-8 card-body">
+                        <h3 class="card-title">
+                            郑州城市职业学院“联姻”蒙牛，共育未来人才
+                        </h3>
+                        <p class="card-text">
+                            6月24日下午，郑州城市职业学院联合河南日报、顶端新闻发起的“河南校企融合新质发展行动”推动下，郑州城市职业学院代表团走进蒙牛河南公司，双方就探索校企合作新模式，培养高素质应用型人才进行了深入交流。
+                            1初步达成“蒙牛班”培训计划
+                            座谈会在蒙牛河南公司举行。蒙...
+                        </p>
+                        <p class="date">
+
+                            2024/06/30
+                        </p>
+                    </div>
+                </div>
+                <a href="#222" class="stretched-link"></a>
+            </article>
+            <ul class="pagination pagination-3d pagination-light justify-content-center">
+
+
+                <li class="page-item"><a class="page-link first disabled" href="javascript:void(0);">首页</a></li>
+                <li class="page-item d-none d-md-block"><a class="page-link prev disabled"
+                        href="javascript:void(0);"><span aria-hidden="true">«</span></a></li>
+                <li class="page-item d-md-none"><a class="page-link prev disabled" href="javascript:void(0);"><span
+                            aria-hidden="true">«上一页</span></a></li>
+                <li class="page-item"><a class="page-link active">1</a></li>
+                <li class="page-item d-none d-md-block"><a class="page-link" href="/xywh/jzlt_2">2</a></li>
+                <li class="page-item d-none d-md-block"><a class="page-link" href="/xywh/jzlt_3">3</a></li>
+                <li class="page-item d-none d-md-block"><a class="page-link next" href="/xywh/jzlt_2"><span
+                            aria-hidden="true">»</span></a></li>
+                <li class="page-item d-md-none"><a class="page-link next" href="/xywh/jzlt_2"><span
+                            aria-hidden="true">下一页»</span></a></li>
+                <li class="page-item"><a class="page-link last" href="/xywh/jzlt_3">尾页</a></li>
+            </ul>
+        </main>
+        <!--内容区域结束-->
+    </div>
+
+    <footer class="zcu-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+
+                    版权所有 © 2023 郑州城市职业学院 &nbsp;&nbsp;
+
+                    <a href="https://beian.miit.gov.cn/" target="_blank">
+                        豫ICP备12014925号-1
+                    </a> /
+                    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41018302000187" target="_blank">
+                        豫公网安备 41018302000187号
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a class="btn btn-zcu-category d-block d-lg-none" data-bs-toggle="offcanvas" href="#zcuCategory" role="button"
+        aria-controls="zcuCategory">
+        栏目
+    </a>
+    <!-- Scroll top -->
+    <div class="btn-scroll-top active-progress">
+        <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+            <path
+                d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z">
+            </path>
+        </svg>
+    </div>
+    <div class="modal notification" tabindex="-1" id="upgrade_notice">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title py-0">
+                        浏览器升级提醒
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center mb-0">
+                        为了最好的体验，请升级您的浏览器或停用兼容模式
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../src/js/jxcgj.js"></script>
+    <!-- <link rel="stylesheet" href="/vendor/social-share/css/share.min.css"> -->
+    <!-- <script src="/vendor/social-share/js/social-share.min.js"></script> -->
+    <script>
+        // social Share
+        // qrcode待升级(https://github.com/kazuhikoarase/qrcode-generator/tree/master/js)
+        // if (null != document.querySelector(".zcu-social-share")) {
+        //     socialShare('.zcu-social-share', {
+        //         sites: ['wechat', 'qq', 'weibo', 'qzone',],
+        //         wechatQrcodeTitle: "微信扫一扫：分享", // 微信二维码提示文字
+        //         wechatQrcodeHelper: '<p>微信里点“发现”，扫一下</p><p>二维码便可将本文分享至朋友圈。</p>',
+        //     });
+        // }
+    </script>
+
+</body>
+
+</html>
