@@ -36,7 +36,12 @@ a {
 }
 
 // layout
-
+header {
+    background: var(--zcu-secondary-color);
+}
+.navbar {
+    background: #fff;
+}
 .zcu-page-banner {
     min-height: 15rem;
 
@@ -225,7 +230,7 @@ a {
 
 .zcu-main {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
-    padding: 0 2rem 2rem;
+    padding: 2rem;
 }
 
 .zcu-content h2,
@@ -269,7 +274,7 @@ a {
 
 .zcu-main {
     p {
-        max-width: 720px; //45em
+        // max-width: 720px; //45em
         text-align: justify;
         line-height: 1.75;
         margin: 0 auto 1rem;
@@ -286,78 +291,57 @@ a {
     }
 
 }
-
-.jyzt p {
-    max-width: 720px; //45em
-    text-align: justify;
-    line-height: 1.75;
-    margin: 0 auto 1rem;
+.cgzs {
+    background: rgba(var(--zcu-brand-color-rgb), .3);
 }
 
-#zcu-kp {
-    h2 {
-        font-size: calc(1.325rem + 0.9vw);
-    }
-
-    .swiper {
-        --swiper-pagination-bottom: 0;
-        padding-bottom: 20px;
+.title-block {
+    h4 {
+        background-image: url(/content/_common/v3/images/plus.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding-left: 1.5rem;
     }
 }
-
-@include media-breakpoint-up(md) {
-    #zcu-kp {
-        .col-md-8 {
-            background-image: url('/content/_common/v3/images/zt/sy/shape-m.png');
-            background-size: contain;
-            background-position: bottom right;
-            background-repeat: no-repeat;
-        }
-
-        h2 {
-            font-size: 1.25rem;
-        }
-
-        .swiper-slide {
-            height: auto !important;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-    }
-}
-
-@include media-breakpoint-up(xl) {
-    #zcu-kp {
-        h2 {
-            font-size: calc(1.325rem + 0.9vw);
-        }
-    }
-}
-
-.shop-feature {
+.cg-feature {
+    background: rgba(var(--zcu-brand-color-rgb), .2);
     .advantage {
         .adv-box {
             height: 100%;
-            background-image: url('/content/_common/v3/images/zt/sy/bg-01.png');
-            background-position: bottom right;
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
+            background: #ffffff;
             transition: all .3s ease-out;
-            padding: 1.5rem 1rem 7rem 1rem;
+            padding: 1.5rem 1rem 3rem 1rem;
+            border-radius: 0;
 
-            ul {
-                list-style: none;
-                padding-left: 0;
-                color: var(--zcu-gray-600);
-
-                li {
-                    margin-bottom: 0.5rem;
+            .desc {
+                text-align: justify;
+                line-height: 1.5;
+                p {
+                    a {
+                        color: var(--zcu-gray-600);
+                    }
+                }
+                &:hover {
+                    h2 {
+                        a {
+                            color: var(--zcu-focus-color);
+                        }
+                    }
+                    p {
+                        a {
+                            color: var(--zcu-body-color);
+                        }
+                        
+                    }
+                }
+                &:last-child {
+                    border-bottom: 0 !important;
                 }
             }
+            
 
             &:hover {
-                background-image: url('/content/_common/v3/images/zt/sy/bg-hover-01.png');
+                background: #fafafa;
                 transform: translateY(-10px);
 
                 h4 {
@@ -369,141 +353,49 @@ a {
     }
 }
 
-.shop-list {
-    .row {
-        box-shadow: var(--zcu-box-shadow-sm);
-    }
-
-    .shop {
-        background-color: var(--zcu-focus-color);
-        position: relative;
-
-        h2 {
-            color: var(--zcu-gray-100);
-        }
-
-        hr {
-            border-color: var(--zcu-gray-300);
-        }
-
-        p {
-            color: var(--zcu-gray-200);
-        }
-
-        &::before {
-            content: "";
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            right: 0;
-            background-image: url('/content/_common/v3/images/zt/sy/shape-m-w.png');
-            background-position: right bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            transition: all 0.3s ease-out;
-        }
-
-        transition: all 0.3s ease-out;
-
-        &:hover {
-            background-color: rgba(var(--zcu-tertiary-bg-rgb), var(--zcu-bg-opacity));
-
-            h2 {
-                color: var(--zcu-focus-color);
-            }
-
-            hr {
-                border-color: var(--zcu-gray-500);
-            }
-
-            p {
-                color: var(--zcu-gray-700);
-            }
-        }
-
-        &:hover::before {
-            background-image: url('/content/_common/v3/images/zt/sy/shape-m.png');
-        }
+.link {
+    background: rgba(var(--zcu-brand-color-rgb), .3);
+    a {
+        border: 1px dashed var(--zcu-auxiliary-color);
+        padding: 2px 5px;
+        margin-right: 10px;
     }
 }
-
-.jy-data {
-
-    .bi {
-        width: 48px !important;
-        height: 48px !important;
-        margin-bottom: 0.75rem;
-        color: var(--zcu-gray-400);
-    }
-
-    .card {
-        transition: all 0.3s ease-out;
-    }
-
-    .card:hover {
-        background: var(--zcu-gray-100);
-
-        .bi {
-            color: rgba(var(--zcu-focus-color-rgb), .5);
-        }
-
-        // .bi-graph-up-arrow {
-        //     color: var(--zcu-gray-400);
-        // }
-
-        // .bi-buildings {
-        //     color: var(--zcu-gray-400);
-        // }
-
-        // .bi-people {
-        //     color: var(--zcu-gray-400);
-        // }
-    }
-}
-
-.jy-feauture {
-    .card {
-        border-radius: 0;
-        transition: all 0.3s ease-out;
-
-        .card-img-top {
-            border-radius: 0;
-        }
-
-        p {
-            font-size: 0.875rem;
-        }
-
-        &:hover {
-            background-color: var(--zcu-gray-100);
-            transform: translateY(-.5rem);
-
-            h3 {
-                color: var(--zcu-focus-color);
-            }
-
-            p {
-                color: var(--zcu-gray-600);
-            }
-        }
-    }
-
-}
-
 // components
+
+.navbar-brand {
+    padding-bottom: .2rem;
+    padding-top: .2rem;
+
+    img {
+        max-width: 18rem;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .navbar {
+        --zcu-navbar-padding-y: 0;
+    }
+}
+
+@include media-breakpoint-up (lg) {
+    .navbar-brand {
+            img {
+                max-width: 32rem;
+            }
+        }
+}
+
 .zcu-search {
     position: relative;
 
     .search-wrapper {
+        position: relative;
         background: #fff;
         border-radius: 0px;
         box-shadow: var(--zcu-box-shadow-sm);
-        top: 1rem;
         font-size: 1.25rem;
-        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-        position: absolute;
-        right: 0;
+        padding: 0rem 0rem 0rem 1rem;
         z-index: 3
     }
 
@@ -560,15 +452,16 @@ a {
 
     .search-wrapper .search-btn {
         align-items: center;
-        background: var(--zcu-brand-color);
+        background: var(--zcu-focus-color);
         border-radius: 0px;
         color: #fff;
         cursor: pointer;
         display: flex;
+        font-size: 1rem;
         height: 3rem;
         justify-content: center;
         transition: color .5s ease, opacity .5s ease;
-        width: 8rem;
+        width: 4rem;
     }
 
     .search-wrapper .search-btn.disabled {
@@ -583,60 +476,12 @@ a {
         opacity: .8
     }
 
-    .search-result {
-        position: absolute;
-        top: 5rem;
-        right: 0;
-        width: 100%;
-        display: none;
-        list-style: none;
-        max-height: 17rem;
-        overflow-y: auto;
-
-        // &::-webkit-scrollbar {
-        //     display: none;
-        //     /* Chrome Safari */
-        // }
-        // scrollbar-width: none;
-        // /* firefox */
-        // -ms-overflow-style: none;
-        // /* IE 10+ */
-        &.show {
-            display: block;
-            background: #ffffff;
-            box-shadow: var(--zcu-box-shadow);
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-
-            li {
-                margin-bottom: 0.5rem;
-
-            }
-
-            a {
-                text-decoration: none;
-                display: block;
-
-                width: calc(100% - 2rem);
-                padding-right: 2rem;
-
-                &:hover {
-                    color: var(--zcu-focus-color);
-                    background-image: url("data: image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8' /%3e%3c/svg%3e");
-                    background-repeat: no-repeat;
-                    background-position: center right;
-                }
-            }
-        }
-    }
-
 }
 
 @include media-breakpoint-up(md) {
     .zcu-search {
         .search-wrapper {
             top: auto;
-            bottom: 1rem;
         }
 
         .search-wrapper.active .search-input {
@@ -741,70 +586,6 @@ a {
     }
 }
 
-.zcu-swiper-majors {
-    --swiper-navigation-size: 24px;
-    --swiper-pagination-top: -210px;
-    --swiper-pagination-color: #fff;
-    --swiper-pagination-bullet-inactive-color: #fff;
-    --swiper-pagination-bullet-inactive-opacity: 0.5;
-    --swiper-navigation-color: var(--zcu-brand-color);
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        width: 40px;
-        height: 40px;
-        margin-top: calc(0px - (var(--swiper-navigation-size) / 2) - 80px);
-        opacity: 0.75;
-        background-color: rgba(255, 255, 255, 0.75);
-    }
-
-    .swiper-slide {
-        height: auto !important;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .card {
-        border-radius: 0;
-        border-color: var(--zcu-border-color);
-        transition: transform .2s ease-in-out, border-color .2s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out;
-
-        a {
-            text-decoration: none;
-        }
-
-        .card-img-top {
-            border-radius: 0;
-        }
-
-        .meta,
-        .slogan {
-            color: #666666;
-        }
-
-        h3 {
-            font-size: 1.25rem;
-            font-weight: 700;
-        }
-
-        .badge {
-            --zcu-badge-font-size: 0.875rem;
-            --zcu-badge-font-weight: 400;
-            --zcu-badge-border-radius: 0;
-            background-color: var(--zcu-focus-color);
-            color: #fff;
-        }
-    }
-
-    .card.active,
-    .card:focus,
-    .card:hover {
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05) !important;
-        transform: translateY(-.25rem)
-    }
-}
-
-
 .notification {
     --zcu-modal-border-radius: 0.125rem;
 
@@ -835,70 +616,6 @@ a {
     border-bottom: 3px solid rgba(var(--zcu-black-rgb), .15) !important
 }
 
-.zcu-features {
-    // border: 2px solid var(--zcu-auxiliary-color);
-    // background-image: linear-gradient(130deg, var(--zcu-secondary-color) 0%, var(--zcu-auxiliary-color) 115%);
-    background-color: var(--zcu-brand-color);
-    margin: 0 -2rem;
-
-    &>.col-12 {
-        background-image: url(/content/_common/v3/images/shape-m.png);
-        background-position: bottom right;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .card {
-        background-color: transparent;
-        color: #fff;
-
-        .card-body {
-            padding-left: 0;
-            padding-right: 0;
-
-            .icon {
-                width: 2rem;
-                height: 2rem;
-                // border: 1px solid #ccc;
-                // border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                img {
-                    // font-size: 2rem;
-                    // color: #0062a9;
-                    width: 2rem;
-                    height: 2rem;
-                }
-            }
-
-            .text {
-                p {
-                    font-weight: 600;
-                    font-size: 0.875rem;
-                    margin-bottom: 0;
-                }
-
-                h6 {
-                    margin-bottom: 0;
-                }
-            }
-        }
-
-    }
-}
-
-@include media-breakpoint-up (lg) {
-
-    .zcu-features {
-        &>.col-12 {
-            background-image: url(/content/_common/v3/images/shape.png);
-        }
-    }
-
-}
-
 .zcu-cta {
     background-color: var(--zcu-brand-color);
     color: #fff;
@@ -909,231 +626,10 @@ a {
     width: 100%;
 }
 
-.zcu-swiper-default {
-    .swiper-pagination {
-        position: relative;
-    }
-}
 
-.zcu-swiper-student {
+.zcu-swiper-cgzs {
     --swiper-navigation-size: 24px;
-    --swiper-pagination-top: 100px;
-    --swiper-pagination-color: #fff;
-    --swiper-pagination-bullet-inactive-color: #fff;
-    --swiper-pagination-bullet-inactive-opacity: 0.5;
-    --swiper-navigation-color: #fff;
-
-    padding-bottom: 20px;
-
-    .swiper-pagination {
-        top: 100px;
-        left: 50%;
-        margin-left: -60px;
-    }
-
-    .swiper-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-bullets.swiper-pagination-horizontal {
-        width: 120px;
-    }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        opacity: 1;
-    }
-
-    .swiper-slide {
-        height: auto !important;
-        min-height: 200px;
-    }
-
-    .student-box {
-        // background-image: linear-gradient(130deg, var(--zcu-secondary-color) 0%, var(--zcu-auxiliary-color) 115%);
-        background-color: var(--zcu-brand-color);
-        height: 100%;
-        position: relative;
-
-        .card {
-            --zcu-card-spacer-x: 0.5rem;
-            --zcu-card-spacer-x: 0.5rem;
-            background: transparent;
-            color: #fff;
-            border: 0;
-            margin-left: 20px;
-            margin-right: 20px;
-            padding-top: 110px;
-
-            h4 {
-                font-size: 1rem;
-                text-align: center;
-                margin-bottom: 15px;
-            }
-
-            .card-title {
-                text-align: center;
-                font-weight: 600;
-                margin-bottom: 10px;
-            }
-        }
-
-        .photo {
-            position: absolute;
-            top: 10px;
-            left: 50%;
-            margin-left: -45px;
-
-            img {
-                width: 90px;
-                border-radius: 5px;
-            }
-        }
-
-    }
-}
-
-@include media-breakpoint-up(md) {
-    .zcu-swiper-student {
-        --swiper-navigation-size: 24px;
-        --swiper-pagination-top: -210px;
-        --swiper-pagination-color: #fff;
-        --swiper-pagination-bullet-inactive-color: #fff;
-        --swiper-pagination-bullet-inactive-opacity: 0.5;
-        --swiper-navigation-color: #fff;
-
-        .swiper-button-prev,
-        .swiper-button-next {
-            // background: rgba(255, 255, 255, .5);
-            // border-radius: 5px;
-            width: 40px;
-            height: 40px;
-            margin-top: calc(0px - (var(--swiper-navigation-size) / 2) - 10px);
-            opacity: 0.75;
-        }
-
-        // .swiper-pagination {
-        //     position: relative;
-        // }
-        .swiper-horizontal>.swiper-pagination-bullets,
-        .swiper-pagination-bullets.swiper-pagination-horizontal {
-            width: 180px;
-            left: calc(100% - 230px);
-            margin-left: 0;
-            top: auto;
-            bottom: 190px;
-        }
-
-        .swiper-slide {
-            height: auto !important;
-        }
-
-        .student-box {
-            // background-image: linear-gradient(130deg, var(--zcu-secondary-color) 0%, var(--zcu-auxiliary-color) 115%);
-
-            height: 100%;
-            position: relative;
-            margin-bottom: 30px;
-
-            .card {
-                background: transparent;
-                color: #fff;
-                margin-left: 50px;
-                margin-right: 240px;
-                padding-top: 20px;
-
-                h4 {
-                    font-size: calc(1rem + 0.125vw);
-                    text-align: left;
-                    width: 720px;
-                    max-width: 100%;
-                }
-
-                .card-title {
-                    text-align: left;
-                    width: 720px;
-                    max-width: 100%;
-                }
-            }
-
-            .photo {
-                position: absolute;
-                top: calc(100% - 160px);
-                left: calc(100% - 180px);
-
-                img {
-                    width: 180px;
-                    border-radius: 5px;
-                }
-            }
-
-        }
-    }
-}
-
-.zcu-job-list {
-    div {
-
-        div {
-            position: relative;
-            width: 100%;
-            margin: 0;
-            padding: 10px 20px 10px 30px;
-            border-bottom: 1px solid rgba(204, 204, 204, 0.3);
-            color: #666;
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 0;
-                margin-top: -0.5rem;
-                height: 1rem;
-                width: 1rem;
-                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%230062a9' stroke='%230062a9' viewBox='0 0 16 16' %3e%3cpath d='M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z' /%3e%3cpath d='M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z' /%3e%3c/svg%3e");
-            }
-        }
-    }
-}
-
-@include media-breakpoint-up(sm) {
-    .zcu-job-list {
-        border-top: var(--zcu-border-width) var(--zcu-border-style) var(--zcu-border-color) !important;
-        border-bottom: var(--zcu-border-width) var(--zcu-border-style) var(--zcu-border-color) !important;
-
-        &>div:not(:last-child) {
-            border-right: var(--zcu-border-width) var(--zcu-border-style) var(--zcu-border-color) !important;
-        }
-
-        div {
-            text-align: center;
-
-            div {
-                border: 0;
-                padding: 5px 10px;
-
-                &::before {
-                    display: none;
-                }
-            }
-        }
-    }
-}
-
-.zcu-swiper-teacher {
-    --swiper-navigation-size: 24px;
-    // --swiper-pagination-top: 0px;
-    --swiper-pagination-color: #fff;
-    --swiper-pagination-bullet-inactive-color: #fff;
-    --swiper-pagination-bullet-inactive-opacity: 0.5;
-
-    .swiper-pagination {
-        top: 120px;
-        left: 50%;
-        margin-left: -60px;
-    }
-
-    .swiper-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-bullets.swiper-pagination-horizontal {
-        width: 120px;
-    }
+    padding-bottom: 1.5rem;
 
     .swiper-button-prev,
     .swiper-button-next {
@@ -1141,739 +637,13 @@ a {
         border-radius: 5px;
         width: 40px;
         height: 40px;
-        margin-top: 0;
-        // top: 70px;
-        // margin-top: 20px;
-        top: 110px;
+        margin-top: -20px;
     }
-
-
-    .swiper-slide {
-        height: auto !important;
-    }
-
-    .teacher-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-
-        .photo {
-            z-index: 1;
-
-            img {
-                width: 120px;
-                border-radius: 5px;
-            }
-        }
-
-        .card {
-            // background-image: linear-gradient(130deg, var(--zcu-secondary-color) 0%, var(--zcu-auxiliary-color) 115%);
-            background-color: var(--zcu-brand-color);
-            height: 100%;
-            width: 100%;
-            color: #fff;
-            margin-left: 0px;
-            margin-top: -30px;
-            padding-top: 40px;
-            border: 0;
-            border-radius: 0;
-
-            .card-body {
-                border: 0;
-                margin-top: 15px;
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-
-                h4 {
-                    font-size: 1rem;
-                    text-align: center;
-                }
-
-                .card-title {
-                    text-align: center;
-                    font-weight: 600;
-                }
-
-                .card-text {
-                    display: none;
-                }
-            }
-        }
-    }
-}
-
-@include media-breakpoint-up(md) {
-    .zcu-swiper-teacher {
-        --swiper-navigation-size: 24px;
-        // --swiper-pagination-top: -80px;
-        --swiper-pagination-color: var(--zcu-brand-color);
-        --swiper-pagination-bullet-inactive-color: var(--zcu-brand-color);
-        --swiper-pagination-bullet-inactive-opacity: 0.5;
-        padding-bottom: 10px;
-
-        .swiper-pagination {
-            top: calc(50% + 85px);
-            left: 0;
-            margin-left: 0;
-        }
-
-        .swiper-horizontal>.swiper-pagination-bullets,
-        .swiper-pagination-bullets.swiper-pagination-horizontal {
-            width: 180px;
-        }
-
-        .swiper-button-prev,
-        .swiper-button-next {
-            // background: rgba(255, 255, 255, .5);
-            // border-radius: 5px;
-            // width: 40px;
-            // height: 40px;
-            // margin-top: -42px;
-            opacity: 0;
-        }
-
-
-        .swiper-slide {
-            height: auto !important;
-        }
-
-        .teacher-box {
-            flex-direction: row;
-            align-items: center;
-            height: 100%;
-
-            .photo {
-                width: 180px;
-
-                img {
-                    width: 180px;
-                }
-            }
-
-            .card {
-                // background-image: linear-gradient(130deg, var(--zcu-secondary-color) 0%, var(--zcu-auxiliary-color) 115%);
-                height: 100%;
-                color: #fff;
-                margin-left: 20px;
-                margin-top: 0;
-                padding-top: 0;
-                border-radius: 0;
-
-                .card-body {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-
-                    h4 {
-                        font-size: calc(1rem + 0.3vw);
-                        text-align: left;
-                        width: 720px;
-                        max-width: 100%;
-                        margin: 0 auto;
-                        margin-bottom: 10px;
-                    }
-
-                    .card-title {
-                        text-align: left;
-                        width: 720px;
-                        max-width: 100%;
-                        margin: 0 auto;
-                        margin-bottom: 10px;
-                    }
-
-                    .card-text {
-                        display: block;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.zcu-swiper-default {
-    max-width: 920px;
-    --swiper-navigation-size: 24px;
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        background: rgba(255, 255, 255, .5);
-        border-radius: 5px;
-        width: 40px;
-        height: 40px;
-    }
-
-}
-
-.zcu-team {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 31rem;
-    padding: 2rem 0;
-
-    .team-name {
-        --swiper-navigation-size: 24px;
-        width: 100%;
-        position: relative;
-        height: 3rem;
-        padding: 0 2rem;
-
-        .swiper-button-prev,
-        .swiper-button-next {
-            width: 24px;
-            height: 24px;
-        }
-
-        .swiper-button-prev {
-            left: 0;
-        }
-
-        .swiper-button-next {
-            right: 0;
-        }
-
-        .zcu-swiper-team {
-            .swiper-slide {
-                background: var(--zcu-brand-color);
-                color: #fff;
-                text-align: center;
-            }
-
-            .swiper-slide-thumb-active {
-                color: var(--zcu-focus-color);
-                font-weight: 600;
-            }
-        }
-
-
-    }
-
-    .team-photo {
-        width: 100%;
-        position: relative;
-        height: 24rem;
-
-        .zcu-swiper-team-2 {
-            --swiper-navigation-color: #fff;
-            --swiper-pagination-color: #fff
-        }
-    }
-}
-
-@include media-breakpoint-up (xl) {
-    .zcu-team {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: 38rem;
-
-        .team-name {
-            --swiper-navigation-size: 24px;
-            --swiper-pagination-top: 0px;
-            --swiper-pagination-color: #fff;
-            --swiper-pagination-bullet-inactive-color: #fff;
-            --swiper-pagination-bullet-inactive-opacity: 0.5;
-            // --swiper-navigation-top-offset: 0;
-            --swiper-navigation-sides-offset: calc(50% - 12px);
-
-            width: 10rem;
-            position: relative;
-            height: 36rem;
-            padding: 2rem 0;
-
-            .swiper-button-prev,
-            .swiper-button-next {
-                width: 24px;
-                height: 24px;
-            }
-
-            .swiper-button-prev {
-                top: 0;
-                left: calc(50% - 12px);
-
-                &::after {
-                    transform: rotate(90deg);
-                }
-            }
-
-            .swiper-button-next {
-                top: auto;
-                bottom: 0;
-                left: calc(50% - 12px);
-
-                &::after {
-                    transform: rotate(90deg);
-                }
-            }
-
-            .zcu-swiper-team {
-
-                width: 100%;
-                height: 100%;
-
-                .swiper-slide {
-                    position: relative;
-                    display: block;
-                    // text-align: center;
-                    font-size: 1rem;
-                    padding: 0rem 0.5rem;
-                    // background-color: var(--zcu-brand-color);
-                    // color: #ffffff;
-                    background: transparent;
-                    color: var(--zcu-body-color);
-                    text-align: left;
-                    text-indent: 16px;
-
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        top: calc(50% - 5px);
-                        left: 0;
-                        background: var(--zcu-brand-color);
-                        width: 10px;
-                        height: 10px;
-                        margin-right: 15px;
-                    }
-
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        background-color: var(--zcu-focus-color);
-                        top: calc(50% - 1px);
-                        height: 2px;
-                        width: 5%;
-                        margin-left: 15px;
-                        opacity: 0;
-                    }
-                }
-
-                .swiper-slide-thumb-active {
-                    color: var(--zcu-focus-color);
-                    font-weight: 600;
-
-                    &::after {
-                        opacity: 1;
-                        width: 100%;
-                        transition: width 1s;
-                    }
-                }
-            }
-        }
-
-        .team-photo {
-            width: calc(100% - 11rem);
-            position: relative;
-            height: 36rem;
-        }
-    }
-}
-
-.zcu-swiper-team-2 {
-    width: 100%;
-    height: 100%;
-
-    padding: 20px auto;
-
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        background-position: center;
-        background-size: cover;
-        // max-width: 600px;
-        // height: 400px;
-        width: 100%;
-
-    }
-
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-.zcu-swiper-logo {
-    height: 150px;
-    padding-bottom: 20px;
-
-    --swiper-navigation-size: 24px;
-    --swiper-pagination-bottom: 0;
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        background: rgba(255, 255, 255, .25);
-        border-radius: 5px;
-        width: 40px;
-        height: 40px;
-    }
-
-    .swiper-slide {
-        text-align: center;
-        background: #fff;
-        height: calc((100% - 20px) / 2) !important;
-
-        /* Center slide text vertically */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: calc(100% - var(--zcu-border-width)*2);
-            height: calc(100% - var(--zcu-border-width)*2);
-            border: var(--zcu-border-color) var(--zcu-border-width) var(--zcu-border-style);
-            box-shadow: var(--zcu-box-shadow-sm);
-        }
-
-        &:hover {
-            img {
-                border-color: rgba(var(--zcu-focus-color-rgb), .5);
-                box-shadow: var(--zcu-box-shadow);
-            }
-        }
-    }
-}
-
-.zcu-swiper-jy {
-    height: auto;
-    margin: 0 auto;
-    padding-bottom: 20px;
-
-    --swiper-navigation-size: 24px;
-    --swiper-pagination-bottom: 0;
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        background: rgba(255, 255, 255, .25);
-        border-radius: 5px;
-        width: 40px;
-        height: 40px;
-        margin-top: -22px;
-        opacity: 1;
-    }
-
-    .swiper-slide {
-        text-align: center;
-        background: #fff;
-        height: 100%;
-
-        .card {
-            background: var(--zcu-gray-100);
-            border-radius: 0;
-            transition: all 0.3s ease-out;
-
-            .card-img-top {
-                border-radius: 0;
-            }
-
-            .badge {
-                left: 10px;
-                top: 10px;
-            }
-
-            p {
-                max-width: 100%;
-                display: inline-block;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-            }
-
-            &:hover {
-                box-shadow: var(--zcu-box-shadow);
-                transform: translateY(-0.5rem);
-            }
-        }
-    }
-}
-
-@include media-breakpoint-up(lg) {
-    .zcu-swiper-jy {
-        height: 760px;
-        margin: 0 auto;
-        padding-bottom: 20px;
-        --swiper-navigation-size: 24px;
-
-        .swiper-button-prev,
-        .swiper-button-next {
-            background: rgba(255, 255, 255, .25);
-            border-radius: 5px;
-            width: 40px;
-            height: 40px;
-            margin-top: -22px;
-            opacity: 0;
-        }
-    }
-}
-
-.zcu-swiper-sx {
-    --swiper-navigation-size: 24px;
-    --swiper-pagination-bottom: 0;
-
-    padding-bottom: 20px;
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        background: rgba(255, 255, 255, .25);
-        border-radius: 5px;
-        width: 40px;
-        height: 40px;
-        margin-top: -22px;
-        opacity: 1;
-    }
-
-    .swiper-slide {
-        width: 480px;
-    }
-}
-
-.zcu-accordion {
-    max-width: 720px;
-    margin: 0 auto;
-
-    .accordion-item {
-        margin-bottom: 10px;
-        border: 1px solid rgba(204, 204, 204, 0.3);
-        // border-radius: 5px;
-    }
-
-    .accordion-item.active .accordion-content {
-        height: auto;
-    }
-
-    .accordion-title {
-        --extra-height: 50px;
-        display: flex;
-        align-items: center;
-        position: relative;
-        height: var(--extra-height);
-        margin: 0 !important;
-        padding: 0 45px 0 30px;
-        background: rgba(181, 187, 211, 0.15);
-        cursor: pointer;
-    }
-
-    .accordion-title::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 20px;
-        color: #666;
-        width: 1.25rem;
-        height: var(--extra-height);
-        line-height: var(--extra-height);
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-        background-position: center center;
-        background-repeat: no-repeat;
-        transition: transform 0.2s ease-in-out;
-    }
-
-    .accordion-content {
-        overflow: hidden;
-        transition: height 0.3s ease;
-    }
-
-    .accordion-content-inner {
-        // -webkit-animation-name: .accordion-content-inner-transform;
-        // animation-name: .accordion-content-inner-transform;
-        -webkit-animation-duration: 0.3s;
-        animation-duration: 0.3s;
-        -webkit-animation-timing-function: ease-in-out;
-        animation-timing-function: ease-in-out;
-        -webkit-animation-iteration-count: 1;
-        animation-iteration-count: 1;
-        -webkit-animation-direction: normal;
-        animation-direction: normal;
-    }
-
-    .accordion-content-inner>ul {
-        padding-left: 0 !important;
-        padding-bottom: 0 !important;
-    }
-
-    .accordion-content ul,
-    .accordion-content li {
-        list-style: none;
-    }
-
-    .accordion-content ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    .accordion-content li {
-        margin: 0;
-        padding: 10px 20px 10px 30px;
-        border-bottom: 1px solid rgba(204, 204, 204, 0.3);
-        color: #666;
-    }
-
-
-
-    .accordion-content li::before {
-        margin-right: 8px;
-    }
-
-    .accordion-content li:last-child {
-        border-bottom: 0;
-    }
-
-    .accordion-item:last-child {
-        margin-bottom: 20px;
-    }
-
-    .accordion-item.active .accordion-title::after {
-        transform: rotate(-180deg);
-        transition: transform 0.2s ease-in-out;
-    }
-}
-
-.zcu-swiper-honor {
-    --swiper-navigation-size: 24px;
-    // --swiper-pagination-top: 0px;
-    // --swiper-pagination-color: #fff;
-    // --swiper-pagination-bullet-inactive-color: #fff;
-    // --swiper-pagination-bullet-inactive-opacity: 0.5;
-
 
     .swiper-pagination {
-        top: auto;
         bottom: 0;
     }
 
-    // .swiper-horizontal>.swiper-pagination-bullets,
-    // .swiper-pagination-bullets.swiper-pagination-horizontal {
-    //     width: 120px;
-    // }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        background: rgba(255, 255, 255, .5);
-        border-radius: 5px;
-        width: 40px;
-        height: 40px;
-    }
-
-
-    .swiper-slide {
-        height: auto !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 18px;
-    }
-
-    .honor-box {
-        height: 100%;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-
-        img {
-            width: 100%;
-            box-shadow: var(--zcu-box-shadow);
-        }
-    }
-
-
-}
-
-.zcu-yzs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .photo {
-        z-index: 1;
-
-        img {
-            width: 180px;
-            border: 2px solid #fff;
-        }
-    }
-
-    .card {
-        // background-image: linear-gradient(130deg, var(--zcu-secondary-color) 0%, var(--zcu-auxiliary-color) 115%);
-        background-color: var(--zcu-brand-color);
-        color: #fff;
-        border-radius: 0;
-        border: 0;
-        margin-top: -20px;
-        padding-top: 10px;
-    }
-}
-
-@include media-breakpoint-up(sm) {
-    .zcu-yzs {
-        flex-direction: row;
-        align-items: center;
-
-        .photo {
-            position: relative;
-            z-index: 1;
-            margin-right: -3rem;
-            // margin-left: 1.5rem;
-
-            img {
-                border: 2px solid #fff;
-            }
-        }
-
-        .card {
-            padding-left: 60px;
-            margin-top: 10px;
-        }
-    }
-}
-
-.jyzt {
-    .features {
-        // background-image: url('/content/_common/v3/images/zt/jy/head_bg_img.png');
-        // background-size: cover;
-        // background-position: center center;
-        // background-repeat: no-repeat;
-        text-align: center;
-        color: #fff;
-        background: var(--zcu-brand-color);
-        align-items: center;
-        padding: 1rem;
-
-        h1 {
-            font-size: 2rem;
-        }
-
-        h2 {
-            font-size: 2rem;
-        }
-
-        h3 {
-            font-size: 1rem;
-            margin-bottom: 0;
-        }
-
-        .col {}
-
-        .col:not(:first-child) {
-            img {
-                margin: 10px auto;
-            }
-
-            h1 {
-                font-size: 3rem;
-                font-weight: normal;
-            }
-
-            h3 {
-                font-weight: normal;
-                font-size: 1rem;
-                color: var(--zcu-focus-color);
-            }
-        }
-
-    }
 }
 
 .offcanvas-header {
@@ -2070,7 +840,21 @@ a {
 }
 
 
-
+.post-body {
+    .image-container {
+        display: block;
+        max-width: 100%;
+        text-align: center;
+        a {
+            color: var(--zcu-gray-500);
+        }
+        .image-title {
+            display: block;
+            font-size: 0.75em;
+            color: var(--zcu-gray-500);
+        }
+    }
+}
 
 
 .zcu-card {

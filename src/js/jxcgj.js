@@ -77,12 +77,10 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // swiper
-    const swiperDefault = new Swiper('.zcu-swiper-default', {
-
-        // autoHeight: true,
+    const swiperDefault = new Swiper('.zcu-swiper-cgzs', {
 
         autoplay: {
-            delay: 5000,
+            delay: 3000,
             pauseOnMouseEnter: true,
         },
 
@@ -99,12 +97,24 @@ document.addEventListener("DOMContentLoaded", () => {
         // scrollbar: true,
         slidesPerView: 1,
         spaceBetween: 10,
-
+        breakpoints: {
+            
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            }
+        },
     });
 
     if (null != document.querySelector('.search-wrapper')) {
-        // 专业搜索 参考https://www.nottingham.edu.cn/cn/index.aspx
-        // 待优化专业名称模糊搜索 https://github.com/krisk/fuse
         // 数据源https://www.zcu.edu.cn/s?ac=w传值keyword
         const zcuSearch = document.querySelector('.search-wrapper');
         const searchKey = document.querySelector('.search-input');
